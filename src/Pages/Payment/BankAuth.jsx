@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 import lockIcon from "../../Assets/Icon awesome-lock.png";
 import eyeIcon from "../../Assets/Icon awesome-eye-slash.png";
-import { Link } from "react-router-dom";
+import qrCode from "../../Assets/Group 852.png";
 
 const BankAuth = () => {
+  const [showTab, setShowTab] = useState(true);
   return (
     <React.Fragment>
       <div className="bank_auth payment">
@@ -19,7 +21,7 @@ const BankAuth = () => {
             </div>
           </div>
         </div>
-        <div className="row auth_text">
+        <div className="row auth_text mt-3">
           <div className="col-lg-12">
             <div className="d-flex flex-column align-items-center">
               <img src={starlingIcon} alt="..." />
@@ -38,53 +40,87 @@ const BankAuth = () => {
         </div>
         <div className="row">
           <div className="auth_tabs">
-            <button>Internet Banking ID</button>
-            <button>QR Code</button>
-          </div>
-        </div>
-        <div className="row mt-3">
-          <p>Sign In using Internet Banking ID</p>
-        </div>
-        <div className="row mt-1">
-          <div className="col-lg-12">
-            <div className="ps_input1">
-              <input type="text" placeholder="Name on the card" />
-            </div>
-          </div>
-        </div>
-        <div className="row mt-3">
-          <div className="col-lg-12">
-            <div className="ps_input1">
-              <input type="password" placeholder="Password" />
-              <img src={eyeIcon} alt="..." />
-            </div>
-          </div>
-        </div>
-        <div className="row mt-2 align-items-center justify-content-between">
-          <div className="col-lg-6">
-            <div className="check_box">
-              <input type="checkbox" />
-              <span>Rember me</span>
-            </div>
-          </div>
-          <div className="col-lg-6">
-            <Link to="/" className="dont_text">
-              Forgot Password?
-            </Link>
-          </div>
-        </div>
-        <div className="row mt-1">
-          <div className="col-lg-12">
-            <button className="home_form_btn">
-              <Link to="success">Login to Starling Bank</Link>
+            <button onClick={() => setShowTab(true)}>
+              Internet Banking ID
             </button>
+            <button onClick={() => setShowTab(false)}>QR Code</button>
           </div>
         </div>
-        <div className="row mt-3">
-          <div className="col-lg-12">
-            <Link className="hl_text">Cancel transcation</Link>
-          </div>
-        </div>
+        {showTab ? (
+          <>
+            <div className="row mt-3">
+              <p>Sign In using Internet Banking ID</p>
+            </div>
+            <div className="row mt-1">
+              <div className="col-lg-12">
+                <div className="ps_input1">
+                  <input type="text" placeholder="Name on the card" />
+                </div>
+              </div>
+            </div>
+            <div className="row mt-3">
+              <div className="col-lg-12">
+                <div className="ps_input1">
+                  <input type="password" placeholder="Password" />
+                  <img src={eyeIcon} alt="..." />
+                </div>
+              </div>
+            </div>
+            <div className="row mt-2 align-items-center justify-content-between">
+              <div className="col-lg-6">
+                <div className="check_box">
+                  <input type="checkbox" />
+                  <span>Rember me</span>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <Link to="/" className="dont_text">
+                  Forgot Password?
+                </Link>
+              </div>
+            </div>
+           
+            <div className="row mt-1">
+              <div className="col-lg-12">
+                <button className="home_form_btn">
+                  <Link to="success">Login to Starling Bank</Link>
+                </button>
+              </div>
+            </div>
+            <div className="row mt-3">
+              <div className="col-lg-12">
+                <Link className="hl_text">Cancel transcation</Link>
+              </div>
+            </div>
+          
+          </>
+        ) : (
+          // <BankQrCode />
+          <>
+            <div className="row mt-3">
+              <p>Sign In using QR Code</p>
+            </div>
+            <div className="row">
+              <div className="col-lg-12">
+                <img src={qrCode} alt="..." />
+              </div>
+            </div>
+             
+            <div className="row mt-3">
+              <div className="col-lg-12">
+                <button className="home_form_btn">
+                  <Link to="success">Login to Starling Bank</Link>
+                </button>
+              </div>
+            </div>
+            <div className="row mt-3">
+              <div className="col-lg-12">
+                <Link className="hl_text">Cancel transcation</Link>
+              </div>
+            </div>
+          
+          </>
+        )}
       </div>
     </React.Fragment>
   );

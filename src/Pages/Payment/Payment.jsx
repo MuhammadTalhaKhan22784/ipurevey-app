@@ -1,7 +1,7 @@
 import React from "react";
+import { Switch, Route } from "react-router-dom";
 import "./Payment.css";
 import useWebAnimations from "@wellyshen/use-web-animations";
-
 import tree from "../../Assets/Group 3848.png";
 import road from "../../Assets/Group 3975.png";
 import airplane from "../../Assets/Group 3870@2x.png";
@@ -10,14 +10,16 @@ import PaymentOptions from "./PaymentOptions";
 import PaymentMethod from "./PaymentMethod";
 import PaymentPaypal from "./PaymentPaypal";
 import PaymentStripe from "./PaymentStripe";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import PaymentSuccess from "./PaymentSuccess";
+import PaymentThankYou from "./PaymentThankYou";
 import PaymentFailed from "./PaymentFailed";
 import PaymentBankMethod from "./PaymetBankMethod";
 import PaymentLoading from "./PaymentLoading";
 import BankSelect from "./BankSelect";
 import BankPaying from "./BankPaying";
 import BankAuth from "./BankAuth";
+import BankOtp from "./BankOtp";
+import BankAccountType from "./BankAccountType";
+import ConfirmPayment from "./ConfirmPayment";
 
 const Payment = () => {
   const { ref } = useWebAnimations({
@@ -83,7 +85,7 @@ const Payment = () => {
                   <Route
                     exact
                     path="/payment/success"
-                    component={PaymentSuccess}
+                    component={PaymentThankYou}
                   />
                   <Route
                     exact
@@ -110,10 +112,17 @@ const Payment = () => {
                     path="/payment/paying-bank"
                     component={BankPaying}
                   />
-                    <Route
+                  <Route exact path="/payment/bank-auth" component={BankAuth} />
+                  <Route exact path="/payment/bank-otp" component={BankOtp} />
+                  <Route
                     exact
-                    path="/payment/bank-auth"
-                    component={BankAuth}
+                    path="/payment/bank-type"
+                    component={BankAccountType}
+                  />
+                  <Route
+                    exact
+                    path="/payment/confirm-payment"
+                    component={ConfirmPayment}
                   />
                 </Switch>
               </div>

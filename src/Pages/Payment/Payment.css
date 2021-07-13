@@ -177,7 +177,7 @@ span {
 
 .active_box {
   border: 1.5px solid #2e58a6;
-  background: white;
+  background: white !important;
   padding: 10px 5px;
 }
 
@@ -487,5 +487,70 @@ span {
 }
 
 .bank_auth .dont_text {
-  color: #2E58A6;
+  color: #2e58a6;
+}
+
+/* bank otp */
+
+.otp_text h5 {
+  color: #2e58a6;
+  font-size: 0.9rem;
+}
+
+.otp_text p {
+  font-size: 0.8rem;
+}
+
+.otp_box {
+  padding: 0 20px;
+}
+
+.otp_input {
+  width: 100%;
+  height: 50px;
+  border: 1.2px solid #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -3px 4px 6px -3px #0000004d;
+}
+
+.bank_otp .dont_text {
+  text-align: center;
+  color: #2e58a6;
+}
+
+/* bank type */
+
+.btype_text h5 {
+  color: #2e58a6;
+  font-weight: 600;
+}
+
+.btype_text p {
+  font-size: 0.8rem;
+}
+
+.btype_text h2 {
+  font-size: 1rem;
+}
+
+.type_box {
+  width: 100%;
+  padding: 10px 8px;
+  /* margin: 0.5rem 0; */
+  height: max-content;
+  background: #f0f4fc;
+  position: relative;
+}
+
+.type_box span {
+  font-weight: 600;
+}
+
+.type_box img {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 15px;
 }
