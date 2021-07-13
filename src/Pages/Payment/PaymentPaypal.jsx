@@ -1,0 +1,51 @@
+import React from "react";
+import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
+import eyeIcon from "../../Assets/Icon awesome-eye-slash.png";
+import { Link } from "react-router-dom";
+const PaymentPaypal = () => {
+  return (
+    <React.Fragment>
+      <div className="payment_stripe payment">
+        <div className="pstripe_head">
+          <img src={arrowLeft} alt="..." />
+          <h1>Paypal</h1>
+        </div>
+        <div className="row">
+          <div className="col-lg-12 p-0">
+            <span>Please login to PayPal to complete the transaction!</span>
+          </div>
+        </div>
+        <div className="row mt-3">
+          <div className="col-lg-12">
+            <div className="ps_input1">
+            <input type="email" placeholder="Email Address" />
+            </div>
+          </div>
+        </div>
+        <div className="row mt-3">
+          <div className="col-lg-12">
+            <div className="ps_input1">
+              <input type="password" placeholder="Password" />
+              <img src={eyeIcon} alt="..." />
+            </div>
+          </div>
+        </div>
+        
+        <div className="row mt-5">
+          <div className="col-lg-12">
+            <button className="home_form_btn">
+              <Link to="success">Login to Paypal</Link>
+            </button>
+          </div>
+        </div>
+        <div className="row mt-3">
+          <div className="col-lg-12">
+            <Link className="hl_text">Having trouble logging in?</Link>
+          </div>
+        </div>
+      </div>
+    </React.Fragment>
+  );
+};
+
+export default PaymentPaypal;
