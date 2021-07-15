@@ -26,6 +26,7 @@ import Career from "../Pages/Career";
 import Partners from "../Pages/Partners/Partners";
 import Payment from "../Pages/Payment/Payment";
 import PaymentMethod from "../Pages/Payment/PaymentMethod";
+import Plan from "../Pages/Plan/Plan";
 
 const AppRouter = () => {
   return (
@@ -54,7 +55,7 @@ const AppRouter = () => {
         <Route path="/career" component={Career} />
         <Route path="/partners" component={Partners} />
         <Route path="/payment" component={Payment} />
-     
+        <Route path="/plan" component={Plan} />
       </Switch>
       <Footer />
       <CopyRight />

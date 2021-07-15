@@ -23,6 +23,7 @@ textarea {
     0 1px 0 #fff;
   border-radius: 5px;
 }
+
 input::placeholder,
 select::placeholder,
 textarea::placeholder {

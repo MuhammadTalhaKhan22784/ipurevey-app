@@ -29,7 +29,8 @@ const options = {
 const PaymentMethod = () => {
   const [active, setActive] = useState("paypal");
   return (
-    <React.Fragment>
+ 
+ <React.Fragment>
       <div className="pay_method">
         <div className="row">
           <div className="col-lg-12">
@@ -51,7 +52,7 @@ const PaymentMethod = () => {
           <div className="col-lg-12">
             <div className="tr_details_2">
               <div>
-                <span>TRANSCATION DETAILS</span>
+                <span>Single Claim Initiation Fee</span>
                 <span>£5.99</span>
               </div>
               <hr />
@@ -89,7 +90,8 @@ const PaymentMethod = () => {
         </div>
       </div>
     </React.Fragment>
-  );
+ 
+ );
 };
 
 export default PaymentMethod;

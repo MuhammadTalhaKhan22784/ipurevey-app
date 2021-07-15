@@ -101,7 +101,7 @@ const BankAuth = () => {
               <p>Sign In using QR Code</p>
             </div>
             <div className="row">
-              <div className="col-lg-12">
+              <div className="col-lg-12 d-flex justify-content-center">
                 <img src={qrCode} alt="..." />
               </div>
             </div>

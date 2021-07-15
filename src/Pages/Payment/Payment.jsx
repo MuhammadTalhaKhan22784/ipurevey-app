@@ -20,6 +20,7 @@ import BankAuth from "./BankAuth";
 import BankOtp from "./BankOtp";
 import BankAccountType from "./BankAccountType";
 import ConfirmPayment from "./ConfirmPayment";
+import PaymentSuccess from "./PaymentSuccess";
 
 const Payment = () => {
   const { ref } = useWebAnimations({
@@ -84,7 +85,7 @@ const Payment = () => {
                   />
                   <Route
                     exact
-                    path="/payment/success"
+                    path="/payment/thank-you"
                     component={PaymentThankYou}
                   />
                   <Route
@@ -123,6 +124,11 @@ const Payment = () => {
                     exact
                     path="/payment/confirm-payment"
                     component={ConfirmPayment}
+                  />
+                  <Route
+                    exact
+                    path="/payment/success"
+                    component={PaymentSuccess}
                   />
                 </Switch>
               </div>

@@ -43,7 +43,7 @@ const options = {
   },
 };
 
-const BankSelect = () => {
+const BankSelect = (props) => {
   const [active, setActive] = useState("paypal");
 
   return (
@@ -72,7 +72,7 @@ const BankSelect = () => {
         </div>
         <div className="row">
           {Object.entries(options).map((el) => (
-            <div className="col-lg-6">
+            <div className={props.col ? "col-lg-4" : "col-lg-6"}>
               <div
                 onClick={() => setActive(el[0])}
                 className={

@@ -104,7 +104,7 @@ span {
 }
 
 .pm_head img {
-  width: 15px;
+  width: 15px !important;
   position: absolute;
   /* top: 5px; */
 }
@@ -284,6 +284,9 @@ span {
   border: none !important;
   box-shadow: none;
   margin: 0;
+  background: none;
+  color: #7095db;
+  width: 100%;
 }
 
 .payment .home_form_btn {
@@ -318,9 +321,9 @@ span {
   margin-top: 0;
 }
 
-/* payment_success */
+/* payment_thank */
 
-.payment_success {
+.payment_thank {
   width: 100%;
   padding: 4rem 0;
 }
@@ -344,7 +347,7 @@ span {
   color: #2e58a6;
 }
 
-.payment_success .home_form_btn a {
+.payment_thank .home_form_btn a {
   color: white !important;
   padding: 10px 20px;
 }
@@ -492,6 +495,10 @@ span {
 
 /* bank otp */
 
+.otp_text {
+  text-align: center;
+}
+
 .otp_text h5 {
   color: #2e58a6;
   font-size: 0.9rem;
@@ -553,4 +560,33 @@ span {
   top: 4px;
   right: 4px;
   width: 15px;
+}
+
+/* payment_success */
+
+.payment_success {
+  width: 100%;
+}
+
+.payment_success img {
+  width: 40px;
+}
+
+.payment_success .tr_details_2 > div {
+  background: white;
+}
+
+.payment_success .tr_details_2 span:nth-of-type(1) {
+  color: #000000;
+}
+
+.payment_success .tr_details_2 hr {
+  background: #000000;
+  margin: -1px auto;
+  height: 1px;
+  width: 94%;
+}
+
+.plan_paypal .pstripe_head img {
+  display: none;
 }

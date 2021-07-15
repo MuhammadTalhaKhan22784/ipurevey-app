@@ -36,8 +36,8 @@ const BankOtp = () => {
         </div>
        
        <div className="row mt-2 otp_text">
-          <div className="col-lg-12">
-            <img style={{ width: "30px" }} src={otpIcon} alt="..." />
+          <div className="col-lg-12 d-flex justify-content-center">
+            <img style={{ width: "35px" }} src={otpIcon} alt="..." />
           </div>
           <div className="col-lg-12 mt-2">
             <h5>OTP Verification</h5>

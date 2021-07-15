@@ -11,7 +11,7 @@ const PaymentPaypal = () => {
           <h1>Paypal</h1>
         </div>
         <div className="row">
-          <div className="col-lg-12 p-0">
+          <div className="col-lg-12 p-0 d-flex justify-content-center">
             <span>Please login to PayPal to complete the transaction!</span>
           </div>
         </div>
@@ -40,7 +40,7 @@ const PaymentPaypal = () => {
         </div>
         <div className="row mt-3">
           <div className="col-lg-12">
-            <Link className="hl_text">Having trouble logging in?</Link>
+            <Link className="hl_text d-flex justify-content-center">Having trouble logging in?</Link>
           </div>
         </div>
       </div>
