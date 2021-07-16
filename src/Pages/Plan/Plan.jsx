@@ -37,11 +37,12 @@ const Plan = () => {
     <React.Fragment>
       <div className="plan_section">
         <div className="partner_header">
-          <h2>Partners</h2>
+          <h2>Subscribe to a plan</h2>
         </div>
         <div className="plan_hero">
           <div className="plan_container">
             <div className="row">
+              
               <div className="col-lg-6">
                 <div className="select_plan">
                   <h2>Select a plan</h2>
@@ -80,6 +81,7 @@ const Plan = () => {
                   </div>
                 </div>
               </div>
+              
               <div className="col-lg-6">
                 <div className="plan_content">
                   <Switch>
@@ -109,7 +111,7 @@ const Plan = () => {
                         path="/plan/payment-failed"
                         component={PlanFailed}
                       />
-                      <Route
+                      {/* <Route
                         exact
                         path="/plan/bank-select"
                         component={PlanSelectBank}
@@ -139,7 +141,7 @@ const Plan = () => {
                         exact
                         path="/plan/success"
                         component={PlanSuccessfull}
-                      />
+                      /> */}
                     </Route>
                   </Switch>
                 </div>

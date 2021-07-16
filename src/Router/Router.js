@@ -25,13 +25,25 @@ import Faq from "../Pages/FAQ/Faq";
 import Career from "../Pages/Career";
 import Partners from "../Pages/Partners/Partners";
 import Payment from "../Pages/Payment/Payment";
-import PaymentMethod from "../Pages/Payment/PaymentMethod";
 import Plan from "../Pages/Plan/Plan";
+import ApiDoc from "../Pages/ApiDoc/ApiDoc";
+import OurPlans from "../Pages/OurPlans/OurPlans";
+import PlanPayment from "../Pages/Plan/PlanPayment";
+import FeedBack from "../Components/Feedback/FeedBack";
+import Developers from "../Pages/Developers";
+import DashBoard from "../Pages/DashboardAccount/Dashboard";
+import TravelBooking from "../Pages/DashboardAccount/TravelBooking";
+import AccountInformation from "../Pages/DashboardAccount/AccountInfo";
+import SecuritySetting from "../Pages/DashboardAccount/SecuritySetting";
+import DeleteAccount from "../Pages/DashboardAccount/DeleteAccount";
+import AccountActivity from "../Pages/DashboardAccount/AccountActivity";
+import Notifications from "../Pages/DashboardAccount/Notification";
 
 const AppRouter = () => {
   return (
     <Router>
       <Navbar />
+      <FeedBack />
       <Switch>
         <Route exact path="/blog" component={Blog} />
         <Route path="/blog/:id" component={SelectBlog} />
@@ -56,6 +68,17 @@ const AppRouter = () => {
         <Route path="/partners" component={Partners} />
         <Route path="/payment" component={Payment} />
         <Route path="/plan" component={Plan} />
+        <Route path="/api-doc" component={ApiDoc} />
+        <Route path="/our-plan" component={OurPlans} />
+        <Route path="/planpayment" component={PlanPayment} />
+        <Route path="/developer" component={Developers} />
+        <Route path="/dashboard" component={DashBoard} />
+        <Route path="/travel-booking" component={TravelBooking} />
+        <Route path="/account-info" component={AccountInformation} />
+        <Route path="/security" component={SecuritySetting} />
+        <Route path="/delete-account" component={DeleteAccount} />
+        <Route path="/account-activity" component={AccountActivity} />
+        <Route path="/notification" component={Notifications} />
       </Switch>
       <Footer />
       <CopyRight />
