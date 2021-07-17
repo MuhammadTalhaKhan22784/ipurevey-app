@@ -15,16 +15,23 @@ const SignUp = () => {
     <div className="user_acc_container">
       <ChatBox />
       <div className="user_acc_md user_acc_s_md">
-        <div className="user_acc_left_md">
-          {!nextStep ? (
+        {/* <div className="row">
+          <div className="col-lg-12">
+
+          </div>
+        </div> */}
+        <SignUpForm onClick={handleNextStep} />
+
+        {/* <div className="user_acc_left_md"> */}
+        {/* {!nextStep ? (
             <SignUpForm onClick={handleNextStep} />
           ) : (
             <SignUpFormTwo />
-          )}
-        </div>
-        <div className="user_acc_sign_right_md">
+          )} */}
+        {/* </div> */}
+        {/* <div className="user_acc_sign_right_md">
           <img src={man} alt="..." />
-        </div>
+        </div> */}
       </div>
     </div>
   );

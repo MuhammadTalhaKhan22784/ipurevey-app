@@ -1,10 +1,10 @@
 .user_acc_container {
-  background-color: #f8f9fc;
+  /* background-color: #f8f9fc; */
 }
 .user_acc_md {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1330px;
   width: 80%;
   margin: 0px auto;
@@ -21,7 +21,7 @@
   width: 330px;
   padding: 30px 30px;
   background-color: white;
-  box-shadow: 0px 3px 10px #d6d5d5;
+  /* box-shadow: 0px 3px 10px #d6d5d5; */
   border-radius: 4px;
   /* margin-left: 50px; */
 }
