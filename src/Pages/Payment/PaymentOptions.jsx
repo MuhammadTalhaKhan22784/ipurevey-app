@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import tick from "../../Assets/Group 4169.png";
 import wArrow from "../../Assets/Icon feather-arrow-rightw.png";
 const PaymentOptions = () => {
@@ -33,11 +34,11 @@ const PaymentOptions = () => {
               </div>
             </div>
           </div>
-          <div className="row">
+          <div className="row mt-5">
             <div className="col-lg-12">
-              <button className="home_form_btn">
+              <Link to="/payment/method" className="home_form_btn">
                 Continue <img src={wArrow} alt="..." />{" "}
-              </button>
+              </Link>
             </div>
           </div>
         </div>

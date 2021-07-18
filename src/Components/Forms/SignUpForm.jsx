@@ -1,14 +1,17 @@
 import React from "react";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 // assets
 import fb from "../../Assets/Group 833.png";
 import google from "../../Assets/Group 830.png";
 import eye from "../../Assets/Icon awesome-eye-slash.png";
 import orLine from "../../Assets/Group 3483.png";
 
-const SignUpForm = ({onClick}) => {
+const SignUpForm = ({ onClick }) => {
   return (
     <div className="account_form_container">
+      <div className="partner_header">
+        <h2>Subcribe to a plan</h2>
+      </div>
       <div className="account_form_md">
         <div className="account_form_sd">
           <div className="form_head_md">
@@ -28,10 +31,10 @@ const SignUpForm = ({onClick}) => {
             <img src={orLine} alt="..." />
           </div>
           <div className="home_form_div_sd">
-              <div className="acc_name_inp">
-                  <input type="text" placeholder='First Name' />
-                  <input type="text" placeholder='Last Name' />
-              </div>
+            <div className="acc_name_inp">
+              <input type="text" placeholder="First Name" />
+              <input type="text" placeholder="Last Name" />
+            </div>
             <input type="email" placeholder="Email Address" />
             <input type="email" placeholder="Confirm Email Address" />
             <div className="eye_md">
@@ -39,9 +42,16 @@ const SignUpForm = ({onClick}) => {
               <img src={eye} alt="..." />
             </div>
 
-            <button className="home_form_btn" onClick={onClick} >Next</button>
+            <button className="home_form_btn" onClick={onClick}>
+              Next
+            </button>
             <div className="notMember_para">
-                <p>Already a member? <Link className='link' to='/login' >login</Link> </p>
+              <p>
+                Already a member?{" "}
+                <Link className="link" to="/login">
+                  login
+                </Link>{" "}
+              </p>
             </div>
           </div>
         </div>

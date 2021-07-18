@@ -74,6 +74,14 @@ span {
   margin-top: 1rem;
 }
 
+.pay_options .home_form_btn {
+  padding: 10px 50px;
+}
+
+.pay_options .home_form_btn:hover {
+  color: white;
+}
+
 .pay_options .button > img {
   width: 11px;
 }
@@ -175,6 +183,11 @@ span {
   justify-content: space-between;
 }
 
+.paypal_img {
+  width: 140px;
+  position: unset !important;
+}
+
 .active_box {
   border: 1.5px solid #2e58a6;
   background: white !important;
@@ -215,6 +228,7 @@ span {
 
 .pstripe_head img {
   left: 0;
+  top: 11px;
   position: absolute;
 }
 
@@ -337,7 +351,7 @@ span {
 }
 
 .ps_text h2 {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #0a1433;
 }
@@ -356,6 +370,14 @@ span {
 
 .payment_bank_method1 {
   width: 100%;
+}
+
+.payment_bank_method1 .starlink_div {
+  display: none;
+}
+
+.payment_bank_method1 .ps_text h2 {
+  color: #2e58a6;
 }
 
 .payment_bank_method1 .ps_img img {
@@ -434,6 +456,24 @@ span {
   font-size: 0.8rem;
 }
 
+.bank_select_options {
+  height: 250px;
+  overflow-y: scroll;
+}
+
+.bank_select_options::-webkit-scrollbar {
+  width: 5px;
+}
+
+.bank_select_options::-webkit-scrollbar-thumb {
+  background-color: #0075ff;
+  border-radius: 10px;
+}
+
+.bank_select_options::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
 /* paying_bank */
 
 .paying_bank {
@@ -467,7 +507,8 @@ span {
 }
 
 .auth_text p {
-  color: #2e58a6;
+  color: #000000;
+  font-weight: 500;
 }
 
 .bank_auth p {
@@ -564,6 +605,12 @@ span {
   width: 15px;
 }
 
+/* payment failed */
+
+.payment_failed img {
+  width: 80px !important;
+}
+
 /* payment_success */
 
 .payment_success {
@@ -591,4 +638,8 @@ span {
 
 .plan_paypal .pstripe_head img {
   display: none;
+}
+
+.plan_paypal .paypal_img {
+  display: block !important;
 }

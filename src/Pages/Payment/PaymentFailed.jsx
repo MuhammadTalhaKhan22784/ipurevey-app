@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const PaymentFailed = () => {
   return (
     <React.Fragment>
-      <div className="payment_success">
+      <div className="payment_success payment_failed">
         <div className="row">
           <div className="col-lg-12">
             <div className="ps_img">

@@ -6,28 +6,38 @@
   align-items: center;
   justify-content: center;
   max-width: 1330px;
-  width: 80%;
+  width: 100%;
   margin: 0px auto;
 }
 .user_acc_s_md {
   /* margin: 30px auto; */
-  padding: 50px 0px;
+  padding: 12px 0px;
 }
 .user_acc_left_md {
   width: 50%;
   /* border: 2px solid red; */
 }
+.account_form_container {
+  width: 100%;
+}
+
 .account_form_sd {
   width: 330px;
   padding: 30px 30px;
   background-color: white;
   /* box-shadow: 0px 3px 10px #d6d5d5; */
   border-radius: 4px;
+  margin: 0 auto;
   /* margin-left: 50px; */
 }
 .form_head_md {
   text-align: center;
 }
+
+.form_head_md h4 {
+  font-weight: 600;
+}
+
 .account_form_sd .sign_up_btns {
   margin-top: 30px;
 }
@@ -58,7 +68,7 @@
 .notMember_para > p {
   margin-bottom: 0px;
   font-size: 0.8rem;
-  font-weight: lighter;
+  font-weight: 500;
 }
 .form_head_md > h4 {
   font-weight: bold;
@@ -138,23 +148,22 @@
   font-size: 0.8rem;
 }
 
-
 /* forgot form  */
 
-.forgot_main_img{
-    text-align: center;
+.forgot_main_img {
+  text-align: center;
 }
-.forgot_main_img>img{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 60%;
-    margin: 15px auto;
+.forgot_main_img > img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 60%;
+  margin: 15px auto;
 }
-.form_blue_para{
-    font-size: .7rem;
-    color: #2E58A6;
-    margin-bottom: 5px;
+.form_blue_para {
+  font-size: 0.7rem;
+  color: #2e58a6;
+  margin-bottom: 5px;
 }
-.magic_link_Btn{
-    margin-top: 70px !important;
+.magic_link_Btn {
+  margin-top: 70px !important;
 }

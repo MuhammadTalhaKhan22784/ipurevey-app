@@ -1,6 +1,8 @@
 import React from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import bankImg from "../../Assets/Group 868.png";
+import starlingIcon from "../../Assets/Mask Group 2.png";
+
 import { Link } from "react-router-dom";
 const ConfirmPayment = () => {
   return (
@@ -16,6 +18,14 @@ const ConfirmPayment = () => {
             </div>
           </div>
         </div>
+        <div className="row mt-3 starlink_div">
+          <div className="col-lg-12">
+            <div className="d-flex flex-column align-items-center">
+              <img src={starlingIcon} alt="..." />
+              <h5>Starling Bank</h5>
+            </div>
+          </div>
+        </div>
         <div className="row mt-4">
           <div className="col-lg-12">
             <div className="ps_img">
@@ -25,10 +35,8 @@ const ConfirmPayment = () => {
         </div>
         <div className="row mt-4 mb-2">
           <div className="ps_text">
-            <h2 style={{color:"#2E58A6"}}>Confirm Payment?</h2>
-            <p>
-            Are you sure you want to make this payment? 
-            </p>
+            <h2 style={{ color: "#2E58A6" }}>Confirm Payment?</h2>
+            <p>Are you sure you want to make this payment?</p>
           </div>
         </div>
         <div className="row mt-5">

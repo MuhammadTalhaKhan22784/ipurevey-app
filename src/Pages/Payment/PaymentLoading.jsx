@@ -26,7 +26,7 @@ const PaymentLoading = () => {
         </div>
         <div className="row mt-3">
           <div className="ps_text">
-            <p>Authorise the payment from your bank account.</p>
+            <p>Please wait while we direct you to our platform!</p>
           </div>
         </div>
         <div className="row mt-4">

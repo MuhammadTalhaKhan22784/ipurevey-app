@@ -9,10 +9,12 @@ const PaymentStripe = () => {
     <React.Fragment>
       <div className="payment_stripe">
         <div className="pstripe_head">
-          <img src={arrowLeft} alt="..." />
+          <Link to="/payment/method">
+            <img src={arrowLeft} alt="..." />
+          </Link>
           <h1>Stripe</h1>
         </div>
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-lg-12">
             <button className="apple_pay_btn">
               <img src={appleIcon} alt="..." /> <span>Apple Pay</span>

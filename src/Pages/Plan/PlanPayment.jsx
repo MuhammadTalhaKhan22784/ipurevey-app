@@ -46,7 +46,7 @@ const PlanPayment = () => {
               <div className="col-lg-6">
                 <div className="select_plan_payment">
                   <img className="mt-3 mb-2" src={planImg} alt="..." />
-                  <h2>Select a plan</h2>
+                  <h2>Payment Details</h2>
                
                   <div className="row w-100">
                     <div className="col-lg-12">
@@ -78,7 +78,7 @@ const PlanPayment = () => {
                     <div className="col-lg-12">
                       <div className="type_box">
                         <div>
-                          <h2>Payment Details</h2>
+                          <h2>Payment Total</h2>
                         </div>
                         <div className="d-flex justify-content-between mt-1">
                           <span>Transaction amount</span>

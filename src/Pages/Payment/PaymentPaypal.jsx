@@ -1,16 +1,17 @@
 import React from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import eyeIcon from "../../Assets/Icon awesome-eye-slash.png";
+import paypalIcon from "../../Assets/PayPal_logo_logotype_emblem.svg";
 import { Link } from "react-router-dom";
 const PaymentPaypal = () => {
   return (
     <React.Fragment>
       <div className="payment_stripe payment">
         <div className="pstripe_head">
-          <img src={arrowLeft} alt="..." />
-          <h1>Paypal</h1>
+         <Link to="/payment/method"><img src={arrowLeft} alt="..." /></Link> 
+         <img className="paypal_img" src={paypalIcon} alt="..." />
         </div>
-        <div className="row">
+        <div className="row mt-3">
           <div className="col-lg-12 p-0 d-flex justify-content-center">
             <span>Please login to PayPal to complete the transaction!</span>
           </div>

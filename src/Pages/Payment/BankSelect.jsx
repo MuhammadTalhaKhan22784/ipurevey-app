@@ -70,7 +70,7 @@ const BankSelect = (props) => {
             </div>
           </div>
         </div>
-        <div className="row">
+        <div className="row bank_select_options">
           {Object.entries(options).map((el) => (
             <div className={props.col ? "col-lg-4" : "col-lg-6"}>
               <div

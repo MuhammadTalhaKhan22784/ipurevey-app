@@ -23,7 +23,8 @@
   margin: 0 auto;
 }
 
-.select_plan,.select_plan_payment {
+.select_plan,
+.select_plan_payment {
   width: 90%;
   height: max-content;
   display: flex;
@@ -42,7 +43,7 @@
 
 .select_plan_payment .type_box h2 {
   font-size: 1.2rem;
-  color: #2E58A6;
+  color: #2e58a6;
   font-weight: 500;
 }
 
@@ -65,7 +66,8 @@
   font-weight: 500;
 }
 
-.select_plan h2,.select_plan_payment h2 {
+.select_plan h2,
+.select_plan_payment h2 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -143,7 +145,7 @@
   color: #000000;
 }
 
-.plan_pay_method hr {
+.plan_pay_method hr:nth-of-type(1) {
   background: #000000 !important;
   width: 100%;
 }
@@ -155,8 +157,21 @@
 }
 
 .p_methods {
-  height: 300px;
+  height: 200px;
   overflow-y: scroll;
+}
+
+.p_methods::-webkit-scrollbar {
+  width: 5px;
+}
+
+.p_methods::-webkit-scrollbar-thumb {
+  background-color: #0075ff;
+  border-radius: 10px;
+}
+
+.p_methods::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
 }
 
 .p_methods p {
@@ -167,7 +182,7 @@
 
 /* plan_stripe */
 
-.plan_stripe hr {
+.plan_stripe .pm_hr hr {
   width: 30%;
 }
 
@@ -232,6 +247,7 @@
 
 .bank_auth .bank_auth p {
   text-align: center;
+  color: #2e58a6;
 }
 
 .bank_auth .auth_tabs {
@@ -264,8 +280,22 @@
   text-align: center;
 }
 
+.plan_confirm .starlink_div {
+  display: unset;
+}
+
+.starlink_div img {
+  width: 20px;
+}
+
+.starlink_div h5 {
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
 /* plan_success */
 
-.plan_success .ps_img, .plan_success .ps_text{
+.plan_success .ps_img,
+.plan_success .ps_text {
   text-align: center;
 }
