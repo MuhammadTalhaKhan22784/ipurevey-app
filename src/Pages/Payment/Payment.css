@@ -607,6 +607,10 @@ span {
 
 /* payment failed */
 
+.payment_failed {
+  padding: 4rem 0;
+}
+
 .payment_failed img {
   width: 80px !important;
 }

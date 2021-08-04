@@ -9,9 +9,9 @@ import orLine from "../../Assets/Group 3483.png";
 const SignUpForm = ({ onClick }) => {
   return (
     <div className="account_form_container">
-      <div className="partner_header">
+      {/* <div className="partner_header">
         <h2>Subcribe to a plan</h2>
-      </div>
+      </div> */}
       <div className="account_form_md">
         <div className="account_form_sd">
           <div className="form_head_md">
