@@ -4,22 +4,27 @@ import logo from "../Assets/Group 4947.png";
 import bar from "../Assets/Group 4111.png";
 import "./style.css";
 import NotificationDropdown from "../Components/DropDown/NotificationDropDown";
-// assets
-import path from "../Assets/Path 5114.png";
+// import MiniDrawer from '../Pages/DashboardAccount/Sidebar'
+import MobViewDashboardSidebar from "./MobViewDashboardSidebar";
 import UserDropdown from "../Components/DropDown/UserDropDown";
+// assets 
+import path from '../Assets/Path 5114.png'
+// import sOpen from "../Assets/Group 3398.png";
+
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const handleLogIn = () => {
     setIsActive(true);
   };
-  const handleLogout = () => {
-    setIsActive(false);
-  };
+  const handleLogout = ()=>{
+      setIsActive(false)
+  }
 
   return (
     <div className="nav_container">
-      <nav className="navbar navbar-expand-lg navbar-light custom_nav">
+      <nav className="navbar navbar-expand-xl navbar-light custom_nav">
         <div className="container-fluid">
+          <MobViewDashboardSidebar />
           <Link to="/">
             <img className="web_logo" src={logo} alt="" />
           </Link>
@@ -79,7 +84,7 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li className="nav-item" onClick={handleLogIn}>
-                    <Link className="nav-link cus_blue_btn" to="/contact">
+                    <Link className="nav-link cus_blue_btn" to="/signup">
                       Sing Up
                     </Link>
                   </li>

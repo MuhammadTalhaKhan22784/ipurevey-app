@@ -237,7 +237,6 @@ ul{
 .footer_main_div {
   display: flex;
   padding: 20px 120px;
-  margin-top: 20px;
   padding-top: 50px;
   justify-content: space-between;
   background-color: #f0f4fc;
@@ -458,4 +457,9 @@ ul{
   .sub_nav_container h4 {
     margin-left: 20px;
   }
+}
+
+
+@media (max-width:1200px){
+  
 }

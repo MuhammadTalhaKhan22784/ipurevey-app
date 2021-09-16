@@ -38,12 +38,16 @@ import SecuritySetting from "../Pages/DashboardAccount/SecuritySetting";
 import DeleteAccount from "../Pages/DashboardAccount/DeleteAccount";
 import AccountActivity from "../Pages/DashboardAccount/AccountActivity";
 import Notifications from "../Pages/DashboardAccount/Notification";
+import ChatBox from '../Components/ChatBox'
+import TravelClaim from '../Pages/TravelClaim'
+import MobViewActitvityDetailPage from '../Pages/DashboardAccount/AccountActivity/MobViewActitvityDetailPage'
 
 const AppRouter = () => {
   return (
     <Router>
       <Navbar />
       <FeedBack />
+      <ChatBox />
       <Switch>
         <Route exact path="/blog" component={Blog} />
         <Route path="/blog/:id" component={SelectBlog} />
@@ -79,6 +83,12 @@ const AppRouter = () => {
         <Route path="/delete-account" component={DeleteAccount} />
         <Route path="/account-activity" component={AccountActivity} />
         <Route path="/notification" component={Notifications} />
+        <Route
+          exact
+          path="/account-activity/:id"
+          component={MobViewActitvityDetailPage}
+        />
+        <Route path='/travel-claim' component={TravelClaim} />
       </Switch>
       <Footer />
       <CopyRight />

@@ -9,7 +9,7 @@ import IpurveySpecial from "../../Components/HomeComp/IpurveySpecial";
 import Flights from "../../Components/HomeComp/Flights";
 import PaymentMethod from "../../Components/HomeComp/PaymentMethod";
 import Trusted from "../../Components/HomeComp/Trusted";
-import ChatBox from "../../Components/HomeComp/ChatBox";
+import ChatBox from "../../Components/ChatBox";
 import VideoSection from "../../Components/HomeComp/VideoSection";
 // assets
 import train from "../../Assets/Group 4050@2x.png";
@@ -31,9 +31,6 @@ const HomeThree = () => {
       easing: "ease-in-out", // Use a fancy timing function
     },
   });
-  function onChange(value) {
-    console.log("Captcha value:", value);
-  }
 
   return (
     <div className="homeTwo_container">
