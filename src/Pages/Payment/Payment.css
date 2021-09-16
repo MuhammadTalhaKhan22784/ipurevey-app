@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.payment_wrapper .home_form_btn {
+  padding: 10px 25px;
+}
+
 .pay_option_text {
   width: 100%;
 }
@@ -41,7 +45,7 @@
 }
 
 .pay_option_1 h6,
-span {
+.pay_option_1 span {
   font-size: 0.8rem;
   font-weight: 400;
   margin: 0;
@@ -114,7 +118,7 @@ span {
 .pm_head img {
   width: 15px !important;
   position: absolute;
-  /* top: 5px; */
+  top: 2px;
 }
 
 .pm_head h2 {
@@ -181,6 +185,10 @@ span {
   display: flex;
   background: #f0f4fc;
   justify-content: space-between;
+}
+
+.pay-text {
+  color: #2e58a6;
 }
 
 .paypal_img {
@@ -267,6 +275,10 @@ span {
   margin: 0 auto;
   color: #2e58a6;
   height: 1.2px;
+}
+
+.pm_hr span {
+  color: #2e58a6;
 }
 
 .ps_input1 {
@@ -549,6 +561,7 @@ span {
 
 .otp_text p {
   font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .otp_box {
@@ -558,6 +571,7 @@ span {
 .otp_input {
   width: 100%;
   height: 50px;
+  background-color: white;
   border: 1.2px solid #707070;
   display: flex;
   align-items: center;
@@ -596,6 +610,7 @@ span {
 
 .type_box span {
   font-weight: 600;
+  font-size: 0.8rem;
 }
 
 .type_box img {
@@ -625,6 +640,10 @@ span {
   width: 40px;
 }
 
+.payment_success .tr_details_2 span {
+  font-size: 0.8rem;
+}
+
 .payment_success .tr_details_2 > div {
   background: white;
 }
@@ -646,4 +665,101 @@ span {
 
 .plan_paypal .paypal_img {
   display: block !important;
+}
+
+/* media queries */
+
+@media screen and (max-width: 1070px) {
+  .payment_success .tr_details_2 span{
+    font-size: 0.7rem;
+  }
+}
+  @media screen and (max-width: 991px) {
+  .animation_para_div {
+    display: none;
+  }
+  .animation_content_div {
+    justify-content: center;
+  }
+  .pay_option_1 strong,
+  .pay_option_2 strong {
+    font-size: 1.6rem;
+  }
+  .type_box {
+    text-align: initial;
+    margin-bottom: 8px;
+  }
+  .type_box img {
+    top: 15px;
+  }
+  .tr_details_2 > div {
+    /* flex-direction: column; */
+  }
+  .payment_success .tr_details_2 span{
+    font-size: 0.9rem;
+    margin: 3px 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+  .pm_hr hr {
+    width: 30%;
+  }
+  .pm_hr span {
+    font-size: 0.9rem;
+  }
+  .paypal_img {
+    width: 110px;
+  }
+  .payment_wrapper .home_form_btn {
+    width: 100%;
+  }
+  .otp_box {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .tr_details_2 span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .paypal_box div:nth-of-type(1) span {
+    margin-left: 11px;
+  }
+  .pm_hr span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .type_box span {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .paypal_box div:nth-of-type(1) span {
+    font-size: 0.9rem;
+  }
+  .pm_hr hr {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .select_bank .paypal_box div:nth-of-type(1) span {
+    font-size: 0.7rem;
+  }
+  .check_box span {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .auth_tabs button {
+    font-size: 0.8rem;
+  }
 }

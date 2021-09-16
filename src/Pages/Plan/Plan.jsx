@@ -55,11 +55,11 @@ const Plan = () => {
                       <option value="">Flight Combo Plan</option>
                     </select>
                   </div>
-                  <div className="row p_text mt-4">
-                    <div className="col-lg-6">
+                  <div className="row d_p_text p_text mt-4">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-6">
                       <h2>Frequent Rail & Flight Combo Plan</h2>
                     </div>
-                    <div className="col-lg-6">
+                    <div className="col-6 col-sm-6 col-md-6 col-lg-6">
                       <h6 className="fw-bold">£6.99</h6>
                       <p>(+30p/transaction)</p>
                     </div>

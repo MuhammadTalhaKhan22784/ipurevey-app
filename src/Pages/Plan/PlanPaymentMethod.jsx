@@ -1,5 +1,4 @@
 import React from "react";
-import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import paypalIcon from "../../Assets/Group 4071.svg";
 import tick from "../../Assets/Group 4169.png";
 import stripeIcon from "../../Assets/Group 4070.svg";
