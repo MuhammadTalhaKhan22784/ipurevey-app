@@ -10,13 +10,7 @@ import Footer from "../Layout/Footer";
 import Contact from "../Pages/Contact/Contact";
 import Home from "../Pages/Home/Home";
 import CopyRight from "../Layout/CopyRight";
-import HomeTwo from "../Pages/Home/HomeTwo";
-import HomeThree from "../Pages/Home/HomeThree";
-import HomeFour from "../Pages/Home/HomeFour";
-import HomeFive from "../Pages/Home/HomeFive";
-import HomeSix from "../Pages/Home/HomeSix";
-import HomeEight from "../Pages/Home/HomeEight";
-import HomeSeven from "../Pages/Home/HomeSeven";
+
 import Login from "../Pages/CreateAccount/Login";
 import SignUp from "../Pages/CreateAccount/SignUp";
 import Forgot from "../Pages/CreateAccount/Forgot";
@@ -38,9 +32,15 @@ import SecuritySetting from "../Pages/DashboardAccount/SecuritySetting";
 import DeleteAccount from "../Pages/DashboardAccount/DeleteAccount";
 import AccountActivity from "../Pages/DashboardAccount/AccountActivity";
 import Notifications from "../Pages/DashboardAccount/Notification";
-import ChatBox from '../Components/ChatBox'
-import TravelClaim from '../Pages/TravelClaim'
-import MobViewActitvityDetailPage from '../Pages/DashboardAccount/AccountActivity/MobViewActitvityDetailPage'
+import ChatBox from "../Components/ChatBox";
+import TravelClaim from "../Pages/TravelClaim";
+import MobViewActitvityDetailPage from "../Pages/DashboardAccount/AccountActivity/MobViewActitvityDetailPage";
+import SubscriptionManager from "../Pages/DashboardAccount/Subcription";
+import StartSubscription from "../Pages/DashboardAccount/Subcription/StartSubscription";
+import SelectMethod from "../Pages/DashboardAccount/Subcription/SelectMethod";
+import MethodDetail from "../Pages/DashboardAccount/Subcription/MethodDetail";
+import Failed from "../Pages/DashboardAccount/Subcription/Failed";
+import Success from "../Pages/DashboardAccount/Subcription/Success";
 
 const AppRouter = () => {
   return (
@@ -56,13 +56,6 @@ const AppRouter = () => {
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact} />
         <Route exact path="/" component={Home} />
-        <Route path="/home-two" component={HomeTwo} />
-        <Route path="/home-three" component={HomeThree} />
-        <Route path="/home-four" component={HomeFour} />
-        <Route path="/home-five" component={HomeFive} />
-        <Route path="/home-six" component={HomeSix} />
-        <Route path="/home-seven" component={HomeSeven} />
-        <Route path="/home-eight" component={HomeEight} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={SignUp} />
         <Route path="/forgot" component={Forgot} />
@@ -81,14 +74,20 @@ const AppRouter = () => {
         <Route path="/account-info" component={AccountInformation} />
         <Route path="/security" component={SecuritySetting} />
         <Route path="/delete-account" component={DeleteAccount} />
-        <Route path="/account-activity" component={AccountActivity} />
+        <Route exact path="/account-activity" component={AccountActivity} />
         <Route path="/notification" component={Notifications} />
         <Route
           exact
           path="/account-activity/:id"
           component={MobViewActitvityDetailPage}
         />
-        <Route path='/travel-claim' component={TravelClaim} />
+        <Route path="/travel-claim" component={TravelClaim} />
+        <Route path="/manage-subscription" component={SubscriptionManager} />
+        <Route path="/start-subsricption" component={StartSubscription} />
+        <Route path="/select-method" component={SelectMethod} />
+        <Route path="/method-detail" component={MethodDetail} />
+        <Route path='/subs-failed'  component={Success}/>
+        <Route path='/subs-succes' component={Failed} />
       </Switch>
       <Footer />
       <CopyRight />

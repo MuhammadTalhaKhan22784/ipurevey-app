@@ -93,7 +93,6 @@
   font-weight: 600;
   font-size: 0.7rem;
   margin: 0;
-
 }
 
 .feature_item_box h2 {
@@ -126,8 +125,26 @@
   margin: 10px auto;
 }
 
+@media screen and (max-width: 1128px) {
+  .our_plan_col {
+    overflow-x: auto;
+  }
+  .our_plan_row {
+    width: 900px;
+  }
+  .our_plan_col::-webkit-scrollbar {
+    width: 1px;
+    background-color: transparent;
+  }
+  .popular_text {
+    top: 0px;
+  }
+  .feature_item_box h2 {
+    margin-bottom: 0;
+  }
+}
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   .plans_scroll {
     display: flex;
     flex-direction: row !important;

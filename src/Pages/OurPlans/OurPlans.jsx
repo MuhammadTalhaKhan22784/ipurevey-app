@@ -11,7 +11,7 @@ const OurPlans = () => {
         </div>
         <div className="our_plan_hero">
           <div className="row">
-            <div className="col-md-4 col-lg-3">
+            <div className="col-8 col-sm-6 col-md-3 col-lg-3">
               {/* <div className="row"> */}
               <div className="feature_box">
                 <h2>Features</h2>
@@ -45,311 +45,313 @@ const OurPlans = () => {
               </div>
               {/* </div> */}
             </div>
-            <div className="col-md-8 col-lg-9">
-              <div className="row">
-                <div className="col-lg-2 p-0">
-                  <div className="feature_item_box active_fib">
-                    <div className="popular_text">Popular</div>
-                    <div className="fib_head">
-                      <div className="row">
-                        <h5>1 Month</h5>
-                      </div>
-                      <div className="row">
-                        <h2>FREE TRIAL</h2>
-                      </div>
-                      <div className="row">
-                        <span>*Limited to 5 journeys</span>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
+            <div className="col-4 col-sm-6 col-md-9 col-lg-9 our_plan_col">
+              <div className="our_plan_row">
+                <div className="row ">
+                  <div className="col-2 col-sm-2 col-md-2 col-lg-2 p-0">
+                    <div className="feature_item_box active_fib">
+                      <div className="popular_text">Popular</div>
+                      <div className="fib_head">
+                        <div className="row">
+                          <h5>1 Month</h5>
                         </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
+                        <div className="row">
+                          <h2>FREE TRIAL</h2>
                         </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
+                        <div className="row">
+                          <span>*Limited to 5 journeys</span>
                         </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <button className="home_form_btn">Subscribe</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-2 p-0">
-                  <div className="feature_item_box">
-                    <div className="fib_head">
-                      <div className="row">
-                        <h5>Frequent Rail Commuter Plan</h5>
                       </div>
                       <div className="row">
-                        <h2>FREE TRIAL</h2>
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
                       </div>
                       <div className="row">
-                        <span>*Limited to 5 journeys</span>
+                        <button className="home_form_btn">Subscribe</button>
                       </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <button className="home_form_btn">Subscribe</button>
                     </div>
                   </div>
-                </div>
 
-                <div className="col-lg-2 p-0">
-                  <div className="feature_item_box">
-                    <div className="fib_head">
+                  <div className="col-2 col-sm-2 col-md-2 col-lg-2 p-0">
+                    <div className="feature_item_box">
+                      <div className="fib_head">
+                        <div className="row">
+                          <h5>Frequent Rail Commuter Plan</h5>
+                        </div>
+                        <div className="row">
+                          <h2>FREE TRIAL</h2>
+                        </div>
+                        <div className="row">
+                          <span>*Limited to 5 journeys</span>
+                        </div>
+                      </div>
                       <div className="row">
-                        <h5>
-                          Frequent Flyer <br /> Plan
-                        </h5>
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
                       </div>
                       <div className="row">
-                        <h2>FREE TRIAL</h2>
+                        <button className="home_form_btn">Subscribe</button>
                       </div>
-                      <div className="row">
-                        <span>*Limited to 5 journeys</span>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <button className="home_form_btn">Subscribe</button>
                     </div>
                   </div>
-                </div>
 
-                <div className="col-lg-2 p-0">
-                  <div className="feature_item_box">
-                    <div className="fib_head">
-                      <div className="row">
-                        <h5>Frequent Rail & Flight Combo Plan</h5>
-                      </div>
-                      <div className="row">
-                        <h2>FREE TRIAL</h2>
-                      </div>
-                      <div className="row">
-                        <span>*Limited to 5 journeys</span>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
+                  <div className="col-2 col-sm-2 col-md-2 col-lg-2 p-0">
+                    <div className="feature_item_box">
+                      <div className="fib_head">
+                        <div className="row">
+                          <h5>
+                            Frequent Flyer <br /> Plan
+                          </h5>
                         </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
+                        <div className="row">
+                          <h2>FREE TRIAL</h2>
                         </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
+                        <div className="row">
+                          <span>*Limited to 5 journeys</span>
                         </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <button className="home_form_btn">Subscribe</button>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="col-lg-2 p-0">
-                  <div className="feature_item_box">
-                    <div className="fib_head">
-                      <div className="row">
-                        <h5>
-                          Occasional Rail <br /> Plan
-                        </h5>
                       </div>
                       <div className="row">
-                        <h2>FREE TRIAL</h2>
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
                       </div>
                       <div className="row">
-                        <span>*Limited to 5 journeys</span>
+                        <button className="home_form_btn">Subscribe</button>
                       </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <button className="home_form_btn">Subscribe</button>
                     </div>
                   </div>
-                </div>
 
-                <div className="col-lg-2 p-0">
-                  <div className="feature_item_box">
-                    <div className="fib_head">
-                      <div className="row">
-                        <h5>
-                          Occasional Flight <br /> Plan
-                        </h5>
+                  <div className="col-2 col-sm-2 col-md-2 col-lg-2 p-0">
+                    <div className="feature_item_box">
+                      <div className="fib_head">
+                        <div className="row">
+                          <h5>Frequent Rail & Flight Combo Plan</h5>
+                        </div>
+                        <div className="row">
+                          <h2>FREE TRIAL</h2>
+                        </div>
+                        <div className="row">
+                          <span>*Limited to 5 journeys</span>
+                        </div>
                       </div>
                       <div className="row">
-                        <h2>FREE TRIAL</h2>
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
                       </div>
                       <div className="row">
-                        <span>*Limited to 5 journeys</span>
+                        <button className="home_form_btn">Subscribe</button>
                       </div>
                     </div>
-                    <div className="row">
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
+                  </div>
+
+                  <div className="col-2 col-sm-2 col-md-2 col-lg-2 p-0">
+                    <div className="feature_item_box">
+                      <div className="fib_head">
+                        <div className="row">
+                          <h5>
+                            Occasional Rail <br /> Plan
+                          </h5>
+                        </div>
+                        <div className="row">
+                          <h2>FREE TRIAL</h2>
+                        </div>
+                        <div className="row">
+                          <span>*Limited to 5 journeys</span>
                         </div>
                       </div>
+                      <div className="row">
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
 
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
                         </div>
                       </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
-                      </div>
-
-                      <div className="col-lg-12">
-                        <div className="flist">
-                          <img src={tick} alt="..." />
-                        </div>
+                      <div className="row">
+                        <button className="home_form_btn">Subscribe</button>
                       </div>
                     </div>
-                    <div className="row">
-                      <button className="home_form_btn">Subscribe</button>
+                  </div>
+
+                  <div className="col-2 col-sm-2 col-md-2 col-lg-2 p-0">
+                    <div className="feature_item_box">
+                      <div className="fib_head">
+                        <div className="row">
+                          <h5>
+                            Occasional Flight <br /> Plan
+                          </h5>
+                        </div>
+                        <div className="row">
+                          <h2>FREE TRIAL</h2>
+                        </div>
+                        <div className="row">
+                          <span>*Limited to 5 journeys</span>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+
+                        <div className="col-lg-12">
+                          <div className="flist">
+                            <img src={tick} alt="..." />
+                          </div>
+                        </div>
+                      </div>
+                      <div className="row">
+                        <button className="home_form_btn">Subscribe</button>
+                      </div>
                     </div>
                   </div>
                 </div>
