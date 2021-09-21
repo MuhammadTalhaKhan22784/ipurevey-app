@@ -45,9 +45,12 @@ const ApiDoc = () => {
   return (
     <React.Fragment>
       <div className="api_doc_section">
-        <div className="api_doc_header">
-          <h2>Api Documentation</h2>
-          <span>Help?</span>
+        <div className="phead_top">
+          <div></div>
+          <div className="api_doc_header">
+            <h2>Api Documentation</h2>
+            <span>Help?</span>
+          </div>
         </div>
         <div className="api_doc_hero">
           <div className="api_container">
@@ -59,8 +62,8 @@ const ApiDoc = () => {
                       <img src={logo} alt="..." />
                     </div>
                   </div>
-                  <div className="row mt-3">
-                    <div className="col-lg-12">
+                  <div className="row mt-3 w-100">
+                    <div className="col-12 col-sm-12 col-md-12 col-lg-12">
                       <div className="ps_input1">
                         <input type="text" placeholder="Search a bank" />
                         <img
