@@ -27,7 +27,7 @@
 .selection_travel_mode {
   display: flex;
   justify-content: space-between;
-  width: 300px;
+  width: 322px;
   margin: 10px auto;
   margin-top: 20px;
 }
@@ -43,7 +43,7 @@
   height: 40px;
   padding: 20px;
   padding-left: 10px;
-  width: 143px;
+  width: 153px;
 }
 .byAir_mode:hover, .byTrain_mode:hover{
    cursor: pointer;

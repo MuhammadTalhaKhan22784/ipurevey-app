@@ -4,6 +4,7 @@ import "./ApiDoc.css";
 import logo from "../../Assets/iPurvery Logo PNG.svg";
 import searchIcon from "../../Assets/Icon feather-search.png";
 import copyIcon from "../../Assets/Icon material-content-copy.svg";
+import { api_content } from "./ApiDocData";
 const options = {
   list1: {
     text: "Culpa eaque qui nostrum",
@@ -39,6 +40,7 @@ const options = {
     text: "Rerum corrupti deserunt",
   },
 };
+
 const ApiDoc = () => {
   const [active, setActive] = useState("list1");
 
