@@ -5,6 +5,7 @@ import logo from "../../Assets/iPurvery Logo PNG.svg";
 import searchIcon from "../../Assets/Icon feather-search.png";
 import copyIcon from "../../Assets/Icon material-content-copy.svg";
 import { api_content } from "./ApiDocData";
+import Footer from "../../Layout/Footer";
 const options = {
   list1: {
     text: "Culpa eaque qui nostrum",
@@ -175,6 +176,7 @@ const ApiDoc = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </React.Fragment>
   );
 };

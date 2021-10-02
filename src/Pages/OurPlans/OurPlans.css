@@ -126,6 +126,21 @@
   margin: 10px auto;
 }
 
+@media screen and (min-width: 1500px) {
+  .feature_item_box h5 {
+    font-size: 1rem;
+  }
+  .feature_item_box .fib_head {
+    padding-top: 8px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .feature_item_box h5 {
+    font-size: 1.1rem;
+  }
+}
+
 @media screen and (max-width: 1128px) {
   .our_plan_col {
     overflow-x: auto;

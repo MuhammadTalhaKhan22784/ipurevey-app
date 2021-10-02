@@ -165,6 +165,12 @@
 
 /* media queries */
 
+@media screen and (min-width: 1600px) {
+  .partner_container {
+    width: 1300px;
+  }
+}
+
 @media screen and (max-width: 1105px) {
   .started_wrapper {
     width: 85%;
@@ -210,6 +216,12 @@
 }
 
 @media screen and (max-width: 540px) {
+  .partner_section {
+    margin-top: 5.8rem;
+  }
+  .partner_section .phead_top {
+    top: 82px;
+  }
   .partner_hero {
     height: 54vh;
   }

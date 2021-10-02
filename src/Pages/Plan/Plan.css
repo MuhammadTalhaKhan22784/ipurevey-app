@@ -312,7 +312,13 @@
   text-align: center;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (min-width: 1600px) {
+  .plan_container {
+width: 1300px;
+  }
+}
+
+  @media screen and (max-width: 1110px) {
   .plan_container .otp_box {
     padding: 0 15px;
   }
