@@ -125,7 +125,7 @@
 }
 
 .notif_btn img {
-  width: 29px;
+  width: 26px;
   object-fit: contain;
 }
 
@@ -179,7 +179,7 @@ ul {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #e8f9f5;
+  background: #F0F4FC 0% 0% no-repeat padding-box;
   padding: 10px 8px;
 }
 
@@ -194,8 +194,8 @@ ul {
 .nt_head h6,
 .va_text {
   margin: 0;
-  font-size: 0.8rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 .nt_head span {
@@ -320,6 +320,7 @@ ul {
 
 .footer_main_container {
   background-color: #f0f4fc;
+  padding: 2rem 0;
 }
 
 .footer_main_div {
@@ -481,6 +482,10 @@ ul {
 @media screen and (min-width: 1500px) {
   .navbar .container-fluid {
     width: 80% !important;
+  }
+  .sub_nav_container h4 {
+    max-width: 1351px;
+    margin: 0 auto;
   }
 }
 

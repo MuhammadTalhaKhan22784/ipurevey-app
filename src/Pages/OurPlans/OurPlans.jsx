@@ -1,72 +1,49 @@
 import React, { useState } from "react";
 import "./OurPlans.css";
 import tick from "../../Assets/Path 5267.svg";
+import cross from "../../Assets/cross.png";
 const our_planData = [
   {
     id: "0",
     name: "1 Month",
     price: "FREE TRIAL",
     transaction: "*Limited to 5 journeys",
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
+    planImg: [tick, tick, tick, cross, cross],
   },
   {
     id: "1",
-    name: "1 Month",
-    price: "FREE TRIAL",
-    transaction: "*Limited to 5 journeys",
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
+    name: "Frequent Rail Commuter Plan",
+    price: "£2.99",
+    transaction: "*(+30p/Transaction)",
+    planImg: [tick, tick, tick, tick, tick],
   },
   {
     id: "2",
-    name: "1 Month",
-    price: "FREE TRIAL",
-    transaction: "*Limited to 5 journeys",
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
+    name: "Frequent Flyer Plan",
+    price: "£5.99",
+    transaction: "(+30p/transaction)",
+    planImg: [tick, tick, tick, tick, tick],
   },
   {
     id: "3",
-    name: "1 Month",
-    price: "FREE TRIAL",
-    transaction: "*Limited to 5 journeys",
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
+    name: "Frequent Rail & Flight Combo Plan",
+    price: "£6.99",
+    transaction: "(+30p/transaction)",
+    planImg: [tick, tick, tick, tick, tick],
   },
   {
     id: "4",
-    name: "1 Month",
-    price: "FREE TRIAL",
-    transaction: "*Limited to 5 journeys",
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
+    name: "Occasional Rail Plan",
+    price: "£0.79",
+    transaction: "Per transaction",
+    planImg: [tick, tick, tick, cross, cross],
   },
   {
     id: "5",
-    name: "1 Month",
-    price: "FREE TRIAL",
-    transaction: "*Limited to 5 journeys",
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
-    tick: tick,
+    name: "Occasional Flight Plan",
+    price: "£1.99",
+    transaction: "Per transaction",
+    planImg: [tick, tick, tick, cross, cross],
   },
 ];
 const OurPlans = () => {
@@ -149,35 +126,38 @@ const OurPlans = () => {
                             </div>
                           </div>
                           <div className="row">
-                            <div className="col-lg-12">
+                            {d.planImg.map((v, i) => {
+                              return (
+                                <div key={i} className="col-lg-12">
+                                  <div className="flist">
+                                    <img src={v} alt="..." />
+                                  </div>
+                                </div>
+                              );
+                            })}
+                            {/* <div className="col-lg-12">
                               <div className="flist">
-                                <img src={d.tick} alt="..." />
+                                <img src={d.img} alt="..." />
                               </div>
                             </div>
 
                             <div className="col-lg-12">
                               <div className="flist">
-                                <img src={d.tick} alt="..." />
+                                <img src={d.img} alt="..." />
                               </div>
                             </div>
 
                             <div className="col-lg-12">
                               <div className="flist">
-                                <img src={d.tick} alt="..." />
+                                <img src={d.img} alt="..." />
                               </div>
                             </div>
 
                             <div className="col-lg-12">
                               <div className="flist">
-                                <img src={d.tick} alt="..." />
+                                <img src={d.img} alt="..." />
                               </div>
-                            </div>
-
-                            <div className="col-lg-12">
-                              <div className="flist">
-                                <img src={d.tick} alt="..." />
-                              </div>
-                            </div>
+                            </div> */}
                           </div>
                           <div className="row">
                             <button className="home_form_btn">Subscribe</button>

@@ -55,7 +55,7 @@ const TravelBooking = () => {
                       Advanced Filters
                     </p>
                   </div>
-                  {!showFilterDrp ? <FilterDropDown /> : ""}
+                  {showFilterDrp ? <FilterDropDown /> : null}
                 </div>
               </div>
               <div className="travel_table_container">
