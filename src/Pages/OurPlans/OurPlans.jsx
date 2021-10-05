@@ -1,72 +1,80 @@
 import React, { useState } from "react";
 import "./OurPlans.css";
 import tick from "../../Assets/Path 5267.svg";
-
+const our_planData = [
+  {
+    id: "0",
+    name: "1 Month",
+    price: "FREE TRIAL",
+    transaction: "*Limited to 5 journeys",
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+  },
+  {
+    id: "1",
+    name: "1 Month",
+    price: "FREE TRIAL",
+    transaction: "*Limited to 5 journeys",
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+  },
+  {
+    id: "2",
+    name: "1 Month",
+    price: "FREE TRIAL",
+    transaction: "*Limited to 5 journeys",
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+  },
+  {
+    id: "3",
+    name: "1 Month",
+    price: "FREE TRIAL",
+    transaction: "*Limited to 5 journeys",
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+  },
+  {
+    id: "4",
+    name: "1 Month",
+    price: "FREE TRIAL",
+    transaction: "*Limited to 5 journeys",
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+  },
+  {
+    id: "5",
+    name: "1 Month",
+    price: "FREE TRIAL",
+    transaction: "*Limited to 5 journeys",
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+    tick: tick,
+  },
+];
 const OurPlans = () => {
-  const [activePlan, setActivePlan] = useState(false);
+  const [activePlan, setActivePlan] = useState("");
 
-  const our_planData = [
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-    {
-      name: "1 Month",
-      price: "FREE TRIAL",
-      transaction: "*Limited to 5 journeys",
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-      tick: tick,
-    },
-  ];
+  const handleSelect = (e) => {
+    setActivePlan(e.id);
+  };
   return (
     <React.Fragment>
       <div className="our_plans_section">
@@ -115,11 +123,20 @@ const OurPlans = () => {
                   {our_planData.map((d, i) => {
                     return (
                       <div
+                        key={i}
                         className="col-2 col-sm-2 col-md-2 col-lg-2 p-0"
-                        onClick={() => {}}
+                        onClick={() => handleSelect(d)}
                       >
-                        <div className="feature_item_box active_fib">
-                          <div className="popular_text">Popular</div>
+                        <div
+                          className={
+                            activePlan === d.id
+                              ? "active_fib feature_item_box"
+                              : "feature_item_box"
+                          }
+                        >
+                          {activePlan === d.id ? (
+                            <div className="popular_text">Popular</div>
+                          ) : null}
                           <div className="fib_head">
                             <div className="row">
                               <h5>{d.name}</h5>

@@ -13,6 +13,7 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 40px;
+    align-items: center;
 }
 .developers_btns button{
     width: 300px;

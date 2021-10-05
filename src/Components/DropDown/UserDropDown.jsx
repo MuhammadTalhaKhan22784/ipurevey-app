@@ -4,9 +4,9 @@ import { useHistory, Link } from "react-router-dom";
 import userprofileimg from "../../Assets/Rectangle 1113.png";
 import downicon from "../../Assets/Path 5113.png";
 import dashboard from "../../Assets/Icon material-dashboard.png";
-import person from "../../Assets/Icon material-person.png";
-import hand from "../../Assets/Icon awesome-hand-point-up.png";
-import bell from "../../Assets/Icon awesome-bell.png";
+import person from "../../Assets/Icon material-person2.png";
+import hand from "../../Assets/Icon awesome-hand-point-up2.png";
+import bell from "../../Assets/Icon awesome-bell2.png";
 import out from "../../Assets/Icon open-account-logout.png";
 
 const UserDropdown = ({ logout }) => {
