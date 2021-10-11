@@ -38,15 +38,15 @@ const UserDropdown = ({ logout }) => {
             <img src={dashboard} alt="..." />
             <p>Your Dashboard</p>
           </Link>
-          <Link to="/dashboard" className='drop_link'>
+          <Link to="/account-info" className='drop_link'>
             <img src={person} alt="..." />
             <p>Account Settings</p>
           </Link>
-          <Link to="/dashboard" className='drop_link'>
+          <Link to="/manage-subscription" className='drop_link'>
             <img src={hand} alt="..." />
             <p>Subscriptions</p>
           </Link>
-          <Link to="/dashboard" className='drop_link'>
+          <Link to="/notification" className='drop_link'>
             <img src={bell} alt="..." />
             <p>Messages</p>
           </Link>

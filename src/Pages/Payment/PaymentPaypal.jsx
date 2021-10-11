@@ -41,7 +41,7 @@ const PaymentPaypal = () => {
         </div>
         <div className="row mt-3">
           <div className="col-lg-12">
-            <Link className="hl_text d-flex justify-content-center">Having trouble logging in?</Link>
+            <Link to="/login" className="hl_text d-flex justify-content-center">Having trouble logging in?</Link>
           </div>
         </div>
       </div>

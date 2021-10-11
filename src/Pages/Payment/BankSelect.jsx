@@ -16,24 +16,24 @@ const options = {
     img: HBOS,
     route: "/payment/paying-bank",
   },
-  monzo: {
-    name: "Monzo",
-    img: monzo,
-    route: "/payment/paying-bank",
-  },
-  starling: {
-    name: "Santander",
-    img: Starling,
-    route: "/payment/paying-bank",
-  },
   hsbc: {
     name: "HSBC Bank",
     img: HSBC,
     route: "/payment/paying-bank",
   },
-  stripe: {
+  monzo: {
+    name: "Monzo",
+    img: monzo,
+    route: "/payment/paying-bank",
+  },
+    stripe: {
     name: "NatWest",
     img: NatWest,
+    route: "/payment/paying-bank",
+  },
+  starling: {
+    name: "Santander",
+    img: Starling,
     route: "/payment/paying-bank",
   },
   santader: {
@@ -54,7 +54,7 @@ const BankSelect = (props) => {
             <div className="pm_head">
               <div>
                <Link to="/payment/bank-method"><img src={arrowLeft} alt="..." /></Link>
-                <h2>Select a Payment Method</h2>
+                <h2>Select your bank</h2>
               </div>
               <p className="mt-4">
                 This payment method is only available for the banks listed below
