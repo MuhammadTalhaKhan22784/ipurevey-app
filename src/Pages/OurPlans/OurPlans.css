@@ -12,7 +12,7 @@
   height: max-content;
   background: #f0f4fc;
   margin: 2rem auto;
-  padding: 0rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 8px;
 }
 
@@ -41,8 +41,8 @@
   border-radius: 8px;
   margin: 0.3rem 0;
 }
-.feature_list span{
-  font-size: .9rem;
+.feature_list span {
+  font-size: 0.9rem;
 }
 
 .feature_item_box {
@@ -70,7 +70,7 @@
 
 .feature_item_box .fib_head {
   border-radius: 8px 8px 0 0;
-  padding-top: 32px;
+  padding-top: 24px;
   height: 100px;
   display: flex;
   flex-direction: column;
@@ -103,6 +103,7 @@
   color: #2e58a6;
   font-size: 1.2rem;
   font-weight: 700;
+  margin-bottom: 0;
 }
 
 .feature_item_box span {
@@ -150,6 +151,9 @@
   }
   .our_plan_row {
     width: 900px;
+  }
+  .feature_item_box .fib_head {
+    padding-top: 35px;
   }
   .our_plan_col::-webkit-scrollbar {
     width: 1px;
