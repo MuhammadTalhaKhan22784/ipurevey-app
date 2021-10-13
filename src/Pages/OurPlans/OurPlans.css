@@ -7,6 +7,30 @@
   margin: 1rem 0;
 }
 
+.current_plan {
+  background: #2e58a6;
+  color: white !important;
+  border-radius: 8px 8px 0 0;
+}
+
+.fib_head .cp_img {
+  display: none;
+}
+
+.current_plan .cp_img {
+  display: block;
+  position: absolute;
+  left: -4px;
+  top: -5px;
+  width: 64px;
+}
+
+.current_plan h5,
+.current_plan span,
+.current_plan h2 {
+  color: white !important;
+}
+
 .our_plan_hero {
   width: 90%;
   height: max-content;
@@ -62,6 +86,7 @@
   font-size: 0.9rem;
   color: white;
   right: 0;
+  z-index: 999;
   background: #50c900;
   display: flex;
   justify-content: center;
@@ -148,6 +173,11 @@
 @media screen and (max-width: 1128px) {
   .our_plan_col {
     overflow-x: auto;
+  }
+
+  .current_plan .cp_img {
+    left: -1px;
+    top: -1px;
   }
   .our_plan_row {
     width: 900px;
