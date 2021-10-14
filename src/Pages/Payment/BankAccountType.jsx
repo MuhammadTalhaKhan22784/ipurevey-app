@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 import tick from "../../Assets/Group 4169.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const options = {
   bank: {
@@ -20,7 +20,7 @@ const options = {
 };
 const BankAccountType = () => {
   const [active, setActive] = useState("bank");
-
+  const history = useHistory();
   return (
     <React.Fragment>
       <div className="bank_type payment">
@@ -28,7 +28,12 @@ const BankAccountType = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <img src={arrowLeft} alt="..." />
+                <img
+                  style={{ cursor: "pointer" }}
+                  onClick={() => history.goBack()}
+                  src={arrowLeft}
+                  alt="..."
+                />
                 <h2 className="ms-2">Authenticate your Login Credentials</h2>
               </div>
             </div>

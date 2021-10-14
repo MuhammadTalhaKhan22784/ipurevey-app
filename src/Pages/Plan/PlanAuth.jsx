@@ -5,7 +5,7 @@ const PlanAuth = () => {
   return (
     <React.Fragment>
       <div className="plan_select_bank bank_auth">
-        <BankAuth />
+        <BankAuth path />
       </div>
     </React.Fragment>
   );

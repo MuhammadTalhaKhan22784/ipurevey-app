@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 import lockIcon from "../../Assets/Icon awesome-lock.png";
@@ -8,6 +8,7 @@ import qrCode from "../../Assets/Group 852.png";
 
 const BankAuth = () => {
   const [showTab, setShowTab] = useState(true);
+  const history = useHistory();
   return (
     <React.Fragment>
       <div className="bank_auth payment">
@@ -15,9 +16,12 @@ const BankAuth = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <Link to="payment/paying-bank">
-                  <img src={arrowLeft} alt="..." />
-                </Link>
+                <img
+                  onClick={() => history.goBack()}
+                  style={{ cursor: "pointer" }}
+                  src={arrowLeft}
+                  alt="..."
+                />
                 <h2 className="ms-2">Authenticate your Login Credentials</h2>
               </div>
             </div>
@@ -92,7 +96,7 @@ const BankAuth = () => {
 
             <div className="row mt-1">
               <div className="col-lg-12">
-                <Link to="/payment/bank-otp">
+                <Link to="/login">
                   <button className="home_form_btn">
                     Login to Starling Bank
                   </button>

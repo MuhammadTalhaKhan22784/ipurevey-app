@@ -28,7 +28,7 @@ const our_planData = [
     transaction: "*(+30p/Transaction)",
     planImg: [tick, tick, tick, tick, tick],
     flistBg: ["success", "success", "success", "success", "success"],
-    btnText: "Subscribe",
+    btnText: "Cancel Plan",
     curentPlan: "current_plan",
   },
   {

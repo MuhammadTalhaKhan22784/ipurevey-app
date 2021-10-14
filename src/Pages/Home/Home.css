@@ -14,7 +14,6 @@
   position: relative;
   z-index: 999;
   text-align: center;
-  min-height: 52vh;
 }
 .started_form > p {
   font-size: 1.2rem;
