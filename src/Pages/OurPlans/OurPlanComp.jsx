@@ -54,12 +54,12 @@ const OurPlans = (props) => {
             </div>
             <div className="col-4 col-sm-6 col-md-8 col-lg-9 our_plan_col">
               <div className="our_plan_row">
-                <div className="row">
+                <div className="row justify-content-between">
                   {props.data?.map((d, i) => {
                     return (
                       <div
                         key={i}
-                        className={`${d.curentPlan} col-2 col-sm-2 col-md-2 col-lg-2 p-0`}
+                        className={`${d.curentPlan} plan_ca col-2 col-sm-2 col-md-2 col-lg-2 p-0`}
                         onClick={() => handleSelect(d)}
                       >
                         <div
@@ -73,7 +73,11 @@ const OurPlans = (props) => {
                             <div className="popular_text">Popular</div>
                           ) : null}
                           <div className="fib_head">
-                            <img className="cp_img" src={currentPlanImg} alt="..." />
+                            <img
+                              className="cp_img"
+                              src={currentPlanImg}
+                              alt="..."
+                            />
                             <div className="row">
                               <h5>{d.name}</h5>
                             </div>
@@ -88,7 +92,13 @@ const OurPlans = (props) => {
                             {d.planImg.map((v, i) => {
                               return (
                                 <div key={i} className="col-lg-12">
-                                  <div className="flist">
+                                  <div
+                                    className={
+                                      d.flistBg[i] === "success"
+                                        ? "flist bg-white"
+                                        : "flist bg-light"
+                                    }
+                                  >
                                     <img src={v} alt="..." />
                                   </div>
                                 </div>
