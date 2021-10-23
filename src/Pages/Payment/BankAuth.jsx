@@ -4,10 +4,8 @@ import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 import lockIcon from "../../Assets/Icon awesome-lock.png";
 import eyeIcon from "../../Assets/Icon awesome-eye-slash.png";
-import qrCode from "../../Assets/Group 852.png";
 
 const BankAuth = (props) => {
-  const [showTab, setShowTab] = useState(true);
   const history = useHistory();
   return (
     <React.Fragment>
@@ -95,7 +93,10 @@ const BankAuth = (props) => {
         </div>
         <div className="row mt-3">
           <div className="col-lg-12">
-            <Link to="/payment/failed" className="hl_text">
+            <Link
+              to={props.path ? "/plan/payment-failed" : "/payment/failed"}
+              className="hl_text"
+            >
               Cancel transcation
             </Link>
           </div>

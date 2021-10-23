@@ -13,6 +13,8 @@ const OurPlans = () => {
       flistBg: ["success", "success", "success", "failed", "failed"],
       btnText: "Subscribe",
       curentPlan: "",
+      showPop: false,
+      route: "/plan/payment-method",
     },
     {
       id: "1",
@@ -27,6 +29,8 @@ const OurPlans = () => {
       flistBg: ["success", "success", "success", "success", "success"],
       btnText: "Subscribe",
       curentPlan: "",
+      showPop: false,
+      route: "/plan/payment-method",
     },
     {
       id: "2",
@@ -41,6 +45,8 @@ const OurPlans = () => {
       flistBg: ["success", "success", "success", "success", "success"],
       btnText: "Subscribe",
       curentPlan: "",
+      showPop: false,
+      route: "/plan/payment-method",
     },
     {
       id: "3",
@@ -55,6 +61,8 @@ const OurPlans = () => {
       flistBg: ["success", "success", "success", "success", "success"],
       btnText: "Subscribe",
       curentPlan: "",
+      showPop: true,
+      route: "/plan/payment-method",
     },
     {
       id: "4",
@@ -69,6 +77,8 @@ const OurPlans = () => {
       flistBg: ["success", "success", "success", "failed", "failed"],
       btnText: "Subscribe",
       curentPlan: "",
+      showPop: false,
+      route: "/plan/payment-method",
     },
     {
       id: "5",
@@ -83,6 +93,8 @@ const OurPlans = () => {
       flistBg: ["success", "success", "success", "failed", "failed"],
       btnText: "Subscribe",
       curentPlan: "",
+      showPop: false,
+      route: "/plan/payment-method",
     },
   ];
 

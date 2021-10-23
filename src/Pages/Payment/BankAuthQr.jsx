@@ -1,11 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import qrCode from "../../Assets/Group 852.png";
 import lockIcon from "../../Assets/Icon awesome-lock.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
+import { Link, useHistory } from "react-router-dom";
 
-const BankAuthQr = () => {
+const BankAuthQr = (props) => {
+  const history = useHistory();
   return (
     <>
       <div className="bank_auth payment">
@@ -14,7 +15,7 @@ const BankAuthQr = () => {
             <div className="pm_head">
               <div>
                 <img
-                  //   onClick={() => history.goBack()}
+                  onClick={() => history.goBack()}
                   style={{ cursor: "pointer" }}
                   src={arrowLeft}
                   alt="..."
@@ -43,7 +44,9 @@ const BankAuthQr = () => {
         </div>
         <div className="row">
           <div className="auth_tabs">
-            <Link to="/payment/bank-auth">
+            <Link
+              to={props.path ? "/planpayment/bank-auth" : "/payment/bank-auth"}
+            >
               <button className="auth_non_active_tab">
                 Internet Banking ID
               </button>
@@ -62,14 +65,23 @@ const BankAuthQr = () => {
 
         <div className="row mt-3">
           <div className="col-lg-12">
-            <Link to="/payment/confirm-payment">
+            <Link
+              to={
+                props.path
+                  ? "/planpayment/confirm-payment"
+                  : "/payment/confirm-payment"
+              }
+            >
               <button className="home_form_btn">Login to Starling Bank</button>
             </Link>
           </div>
         </div>
         <div className="row mt-3">
           <div className="col-lg-12">
-            <Link to="/payment/select-bank" className="hl_text">
+            <Link
+              to={props.path ? "/plan/payment-failed" : "/payment/failed"}
+              className="hl_text"
+            >
               Cancel transcation
             </Link>
           </div>

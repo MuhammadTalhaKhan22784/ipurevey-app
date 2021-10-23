@@ -4,23 +4,24 @@ import starlingIcon from "../../Assets/Mask Group 2.png";
 import tick from "../../Assets/Group 4169.png";
 import { Link, useHistory } from "react-router-dom";
 
-const options = {
-  bank: {
-    currAccount: "Current Account",
-    accNumber: "33322222",
-    sortNumber: "40-65-22",
-    route: "/payment/bank-qrcode",
-  },
-  monzo: {
-    currAccount: "Savings Account",
-    accNumber: "33322222",
-    sortNumber: "40-65-22",
-    route: "/payment/bank-qrcode",
-  },
-};
+
 const BankAccountType = (props) => {
   const [active, setActive] = useState("bank");
   const history = useHistory();
+  const options = {
+    bank: {
+      currAccount: "Current Account",
+      accNumber: "33322222",
+      sortNumber: "40-65-22",
+      route: props.path ? "/planpayment/bank-qrcode" : "/payment/bank-qrcode",
+    },
+    monzo: {
+      currAccount: "Savings Account",
+      accNumber: "33322222",
+      sortNumber: "40-65-22",
+      route: props.path ? "/planpayment/bank-qrcode" : "/payment/bank-qrcode",
+    },
+  };
   return (
     <React.Fragment>
       <div className="bank_type payment">
@@ -82,7 +83,6 @@ const BankAccountType = (props) => {
                 </div>
               </div>
             </div>
-            
           ))}
         </div>
 
@@ -95,7 +95,12 @@ const BankAccountType = (props) => {
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link className="hl_text">Cancel transcation</Link>
+            <Link
+              to={props.path ? "/plan/payment-failed" : "/payment/failed"}
+              className="hl_text"
+            >
+              Cancel transcation
+            </Link>
           </div>
         </div>
       </div>

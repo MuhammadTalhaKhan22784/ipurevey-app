@@ -50,7 +50,12 @@ const BankPaying = (props) => {
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link to="/payment/select-bank" className="hl_text">
+            <Link
+              to={
+                props.path ? "/planpayment/bank-select" : "/payment/select-bank"
+              }
+              className="hl_text"
+            >
               Change Bank
             </Link>
           </div>

@@ -1,9 +1,10 @@
 import React from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import loading from "../../Assets/stepLoad.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
-const PaymentLoading = () => {
+const PaymentLoading = (props) => {
+  const history = useHistory();
   return (
     <React.Fragment>
       <div className="payment_bank_method1">
@@ -11,9 +12,11 @@ const PaymentLoading = () => {
           <div className="col-lg-12">
             <div className="pm_head">
               <div>
-                <Link to="/payment/bank-auth">
-                  <img src={arrowLeft} alt="..." />
-                </Link>
+                <img
+                  onClick={() => history.goBack()}
+                  src={arrowLeft}
+                  alt="..."
+                />
                 <h2>Select a Payment Method</h2>
               </div>
             </div>
@@ -45,7 +48,10 @@ const PaymentLoading = () => {
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link to="/payment/failed" className="hl_text">
+            <Link
+              to={props.path ? "/plan/payment-failed" : "/payment/failed"}
+              className="hl_text"
+            >
               Cancel Transaction
             </Link>
           </div>

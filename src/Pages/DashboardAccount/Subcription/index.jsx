@@ -16,6 +16,8 @@ const our_planData = [
     flistBg: ["success", "success", "success", "failed", "failed"],
     btnText: "Upgrade",
     curentPlan: "",
+    showPop: false,
+    route: "#",
   },
   {
     id: "1",
@@ -30,6 +32,8 @@ const our_planData = [
     flistBg: ["success", "success", "success", "success", "success"],
     btnText: "Cancel Plan",
     curentPlan: "current_plan",
+    showPop: false,
+    route: "#",
   },
   {
     id: "2",
@@ -44,6 +48,8 @@ const our_planData = [
     flistBg: ["success", "success", "success", "success", "success"],
     btnText: "Upgrade",
     curentPlan: "",
+    showPop: false,
+    route: "#",
   },
   {
     id: "3",
@@ -58,6 +64,8 @@ const our_planData = [
     flistBg: ["success", "success", "success", "success", "success"],
     btnText: "Upgrade",
     curentPlan: "",
+    showPop: true,
+    route: "#",
   },
   {
     id: "4",
@@ -72,6 +80,8 @@ const our_planData = [
     flistBg: ["success", "success", "success", "failed", "failed"],
     btnText: "Upgrade",
     curentPlan: "",
+    showPop: false,
+    route: "#",
   },
   {
     id: "5",
@@ -86,6 +96,8 @@ const our_planData = [
     flistBg: ["success", "success", "success", "failed", "failed"],
     btnText: "Upgrade",
     curentPlan: "",
+    showPop: false,
+    route: "#",
   },
 ];
 const SubscriptionManager = () => {

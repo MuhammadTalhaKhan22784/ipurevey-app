@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./OurPlans.css";
+import {Link} from "react-router-dom"
 import currentPlanImg from "../../Assets/current_plan.png";
 const OurPlans = (props) => {
   const [activePlan, setActivePlan] = useState("2");
@@ -69,7 +70,7 @@ const OurPlans = (props) => {
                               : "feature_item_box"
                           }
                         >
-                          {activePlan === d.id ? (
+                          {d.showPop === true ? (
                             <div className="popular_text">Popular</div>
                           ) : null}
                           <div className="fib_head">
@@ -106,9 +107,11 @@ const OurPlans = (props) => {
                             })}
                           </div>
                           <div className="row">
-                            <button className="home_form_btn">
-                              {d.btnText}
-                            </button>
+                            <Link to={d.route}>
+                              <button className="home_form_btn">
+                                {d.btnText}
+                              </button>
+                            </Link>
                           </div>
                         </div>
                       </div>
