@@ -14,7 +14,7 @@ const OurPlans = () => {
       btnText: "Subscribe",
       curentPlan: "",
       showPop: false,
-      route: "/plan/payment-method",
+      route: "/payment/options",
     },
     {
       id: "1",
@@ -30,7 +30,7 @@ const OurPlans = () => {
       btnText: "Subscribe",
       curentPlan: "",
       showPop: false,
-      route: "/plan/payment-method",
+      route: "/payment/options",
     },
     {
       id: "2",
@@ -46,7 +46,7 @@ const OurPlans = () => {
       btnText: "Subscribe",
       curentPlan: "",
       showPop: false,
-      route: "/plan/payment-method",
+      route: "/payment/options",
     },
     {
       id: "3",

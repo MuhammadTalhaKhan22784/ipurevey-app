@@ -3,7 +3,7 @@ import "./OurPlans.css";
 import {Link} from "react-router-dom"
 import currentPlanImg from "../../Assets/current_plan.png";
 const OurPlans = (props) => {
-  const [activePlan, setActivePlan] = useState("2");
+  const [activePlan, setActivePlan] = useState("3");
 
   const handleSelect = (e) => {
     setActivePlan(e.id);
@@ -12,7 +12,7 @@ const OurPlans = (props) => {
     <React.Fragment>
       <div className={`${props.currentPlan} our_plans_section`}>
         <div className="partner_header">
-          <h2>Partners</h2>
+          <h2>Our Plan</h2>
         </div>
         <div className="our_plan_hero">
           <div className="row">

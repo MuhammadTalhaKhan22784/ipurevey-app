@@ -1,7 +1,7 @@
 .table_container {
   overflow: auto;
 }
-.table_container::-webkit-scrollbar{
+.table_container::-webkit-scrollbar {
   width: 5px;
 }
 .db_table {
@@ -35,7 +35,9 @@
   text-align: center;
   color: #2e58a6;
   opacity: 0.8;
-  font-size: .8;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 0.8;
 }
 .db_table tr {
   border-radius: 8px;
@@ -56,7 +58,8 @@
   padding: 10px 0px;
   text-align: center;
   opacity: 0.5;
-  
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .db_table tr:hover td:last-child {
   padding-right: 10px;
