@@ -115,7 +115,7 @@ const BankSelect = (props) => {
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link className="hl_text">Cancel Transaction</Link>
+            <Link to="/payment/failed" className="hl_text">Cancel Transaction</Link>
           </div>
         </div>
       </div>

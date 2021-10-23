@@ -43,7 +43,7 @@ const PaymentPaypal = () => {
 
         <div className="row mt-5">
           <div className="col-lg-12">
-            <Link to="#">
+            <Link to="/payment/thank-you">
               <button className="home_form_btn">Login to Paypal</button>
             </Link>
           </div>

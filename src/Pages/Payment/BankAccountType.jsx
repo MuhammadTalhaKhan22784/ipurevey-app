@@ -9,16 +9,16 @@ const options = {
     currAccount: "Current Account",
     accNumber: "33322222",
     sortNumber: "40-65-22",
-    route: "/",
+    route: "/payment/bank-qrcode",
   },
   monzo: {
     currAccount: "Savings Account",
     accNumber: "33322222",
     sortNumber: "40-65-22",
-    route: "/",
+    route: "/payment/bank-qrcode",
   },
 };
-const BankAccountType = () => {
+const BankAccountType = (props) => {
   const [active, setActive] = useState("bank");
   const history = useHistory();
   return (
@@ -82,14 +82,15 @@ const BankAccountType = () => {
                 </div>
               </div>
             </div>
+            
           ))}
         </div>
 
         <div className="row mt-5">
           <div className="col-lg-12">
-            <button className="home_form_btn">
-              <Link to="success">Proceed & Pay</Link>
-            </button>
+            <Link to={options[active].route}>
+              <button className="home_form_btn">Proceed & Pay</button>
+            </Link>
           </div>
         </div>
         <div className="row mt-2">

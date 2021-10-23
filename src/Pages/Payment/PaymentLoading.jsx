@@ -38,14 +38,14 @@ const PaymentLoading = () => {
         </div>
         <div className="row mt-4">
           <div className="col-lg-12">
-            <Link to="/payment/bank-type">
+            <Link to="/payment/select-bank">
               <button className="home_form_btn">Continue</button>
             </Link>
           </div>
         </div>
         <div className="row mt-2">
           <div className="col-lg-12">
-            <Link to="#" className="hl_text">
+            <Link to="/payment/failed" className="hl_text">
               Cancel Transaction
             </Link>
           </div>

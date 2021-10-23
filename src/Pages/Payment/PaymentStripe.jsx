@@ -72,7 +72,7 @@ const PaymentStripe = () => {
         <div className="row mt-3">
           <div className="col-lg-12">
             <button className="home_form_btn">
-              <Link to="/payment/success">Continue to pay</Link>
+              <Link to="/payment/thank-you">Continue to pay</Link>
             </button>
           </div>
         </div>
