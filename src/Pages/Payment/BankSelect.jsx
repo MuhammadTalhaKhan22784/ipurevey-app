@@ -73,8 +73,9 @@ const BankSelect = (props) => {
           </div>
         </div>
         <div className="row bank_select_options">
-          {Object.entries(options).map((el) => (
+          {Object.entries(options).map((el, index) => (
             <div
+              key={index}
               className={
                 props.col
                   ? "col-6 col-sm-4 col-md-4 col-lg-4"

@@ -13,7 +13,6 @@ const PaymentSuccess = () => {
               <Link to="/payment/bank-type">
                   <img src={arrowLeft} alt="..." />
                 </Link>
-                {/* <img src={arrowLeft} alt="..." /> */}
                 <h2>Authorize your payment</h2>
               </div>
             </div>

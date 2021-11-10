@@ -20,7 +20,7 @@ const PaymentMethod = () => {
                 aut amet culpa, voluptatibus excepturi!
               </p>
               <div className="learn_more_lin">
-                <Link className="link">
+                <Link to="#" className="link">
                 Download the app <img src={arrow} alt="..." />
                 </Link>
               </div>
@@ -42,7 +42,7 @@ const PaymentMethod = () => {
                 aut amet culpa, voluptatibus excepturi!
               </p>
               <div className="learn_more_lin2">
-                <Link className="link">
+                <Link to="#" className="link">
                   View registered banks <img src={arrow} alt="..." />
                 </Link>
               </div>
@@ -58,7 +58,7 @@ const PaymentMethod = () => {
                 aut amet culpa, voluptatibus excepturi!
               </p>
               <div className="learn_more_lin">
-                <Link className="link">
+                <Link to="#" className="link">
                 Download the app <img src={arrow} alt="..." />
                 </Link>
               </div>

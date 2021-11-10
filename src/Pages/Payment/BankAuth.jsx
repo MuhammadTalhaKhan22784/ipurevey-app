@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useHistory } from "react-router-dom";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";

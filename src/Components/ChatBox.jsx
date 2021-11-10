@@ -31,7 +31,7 @@ const ChatBox = () => {
       document.addEventListener("click", handler);
       return () => document.removeEventListener("click", handler);
     }
-  }, [chatOpen]);
+  }, [chatOpen]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <div className="chatBox_container">

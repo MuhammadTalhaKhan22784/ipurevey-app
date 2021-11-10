@@ -27,7 +27,8 @@ const FeedBack = () => {
       document.addEventListener("click", handler);
       return () => document.removeEventListener("click", handler);
     }
-  }, [chatOpen]);
+  }, [chatOpen]); // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
     <React.Fragment>
       <div className="feedback">
@@ -91,10 +92,17 @@ const FeedBack = () => {
             </div>
           </div>
         ) : null}
-        <div className="feedback_btn"  onClick={() => {
+        <div
+          className="feedback_btn"
+          onClick={() => {
             !chatOpen ? handleChatOpen() : hideChat();
-          }}>
-          <img style={{transform: chatOpen ? "rotate(-90deg)" : "rotate(90deg)"}} src={arrow} alt="..." />
+          }}
+        >
+          <img
+            style={{ transform: chatOpen ? "rotate(-90deg)" : "rotate(90deg)" }}
+            src={arrow}
+            alt="..."
+          />
           <span>Feedback</span>
         </div>
       </div>

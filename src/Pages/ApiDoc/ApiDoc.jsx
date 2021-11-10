@@ -4,7 +4,6 @@ import "./ApiDoc.css";
 import logo from "../../Assets/iPurvery Logo PNG.svg";
 import searchIcon from "../../Assets/Icon feather-search.png";
 import copyIcon from "../../Assets/Icon material-content-copy.svg";
-import { api_content } from "./ApiDocData";
 import Footer from "../../Layout/Footer";
 const options = {
   list1: {
@@ -78,8 +77,9 @@ const ApiDoc = () => {
                     </div>
                   </div>
                   <div className="row w-100 mt-3 ad_left_list">
-                    {Object.entries(options).map((el) => (
+                    {Object.entries(options).map((el, i) => (
                       <div
+                        key={i}
                         className="col-lg-12 p-0"
                         onClick={() => setActive(el[0])}
                       >

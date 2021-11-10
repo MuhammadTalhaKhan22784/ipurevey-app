@@ -59,7 +59,7 @@ const TravelBooking = () => {
                 </div>
               </div>
               <div className="travel_table_container">
-                <Table tbClass="tb_page_table" data={travelBookingTable} />
+                <Table tbclassName="tb_page_table" data={travelBookingTable} />
               </div>
               <div className="mob_view_taravel_card">
                 <MobViewDetailCard />

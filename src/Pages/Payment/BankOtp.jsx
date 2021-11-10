@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import arrowLeft from "../../Assets/Icon feather-arrow-left.png";
 import starlingIcon from "../../Assets/Mask Group 2.png";
 import lockIcon from "../../Assets/Icon awesome-lock.png";

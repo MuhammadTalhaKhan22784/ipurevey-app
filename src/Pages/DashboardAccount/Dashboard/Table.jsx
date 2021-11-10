@@ -27,7 +27,7 @@ const Table = ({ tbClass, data }) => {
       document.addEventListener("click", handler);
       return () => document.removeEventListener("click", handler);
     }
-  }, [reqOpen]);
+  }, [reqOpen]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
@@ -78,7 +78,7 @@ const Table = ({ tbClass, data }) => {
                 STATUS{" "}
                 <img
                   style={{ marginLeft: "5px" }}
-                  class="popover__title"
+                  className="popover__title"
                   src={i}
                   alt="..."
                 />

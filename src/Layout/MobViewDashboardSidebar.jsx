@@ -4,7 +4,6 @@ import List from "@material-ui/core/List";
 import "../Pages/DashboardAccount/Style/sidebar.css";
 // assets
 import sOpen from "../Assets/Group 3398.png";
-import sClose from "../Assets/Group 3399.png";
 import dashboard from "../Assets/Icon material-dashboard.png";
 import search from "../Assets/Icon feather-searchd.png";
 import person from "../Assets/Icon material-person.png";

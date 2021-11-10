@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import userprofileimg from "../../Assets/Rectangle 1113.png";
 import downicon from "../../Assets/Path 5113.png";
@@ -34,24 +34,24 @@ const UserDropdown = ({ logout }) => {
           aria-labelledby="dropdownMenuButton1"
         >
           {/* <li className="userdrpdwn_content"> */}
-          <Link to="/dashboard" className='drop_link' >
+          <Link to="/dashboard" className="drop_link">
             <img src={dashboard} alt="..." />
             <p>Your Dashboard</p>
           </Link>
-          <Link to="/account-info" className='drop_link'>
+          <Link to="/account-info" className="drop_link">
             <img src={person} alt="..." />
             <p>Account Settings</p>
           </Link>
-          <Link to="/manage-subscription" className='drop_link'>
+          <Link to="/manage-subscription" className="drop_link">
             <img src={hand} alt="..." />
             <p>Subscriptions</p>
           </Link>
-          <Link to="/notification" className='drop_link'>
+          <Link to="/notification" className="drop_link">
             <img src={bell} alt="..." />
             <p>Messages</p>
           </Link>
           <br />
-          <Link to="/" className='drop_link' onClick={logout}>
+          <Link to="/" className="drop_link" onClick={logout}>
             <img src={out} alt="..." />
             <p>Logout</p>
           </Link>

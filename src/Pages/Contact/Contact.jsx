@@ -100,13 +100,13 @@ const Contact = () => {
           <div className="contact_map_sec">
             <h3>Our Office</h3>
             <div className="contact_map_flex d-flex">
-              {/* <img className='map_img' src={map} alt="" /> */}
               <iframe
+                title="bg"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.364970384342!2d-0.09444828479893302!3d51.524865417247824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca8726d93f7%3A0x8e7d368cebe4db0b!2s130%20Old%20St%2C%20London%20EC1V%209BD%2C%20UK!5e0!3m2!1sen!2s!4v1621864060958!5m2!1sen!2s"
                 width="600"
                 height="450"
                 style={{ border: 0 }}
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
                 className="map_img"
               ></iframe>

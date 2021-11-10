@@ -4,7 +4,6 @@ import starlingIcon from "../../Assets/Mask Group 2.png";
 import tick from "../../Assets/Group 4169.png";
 import { Link, useHistory } from "react-router-dom";
 
-
 const BankAccountType = (props) => {
   const [active, setActive] = useState("bank");
   const history = useHistory();
@@ -58,8 +57,8 @@ const BankAccountType = (props) => {
           </div>
         </div>
         <div className="row mt-2">
-          {Object.entries(options).map((el) => (
-            <div className="col-lg-6">
+          {Object.entries(options).map((el, i) => (
+            <div key={i} className="col-lg-6">
               <div
                 onClick={() => setActive(el[0])}
                 className={

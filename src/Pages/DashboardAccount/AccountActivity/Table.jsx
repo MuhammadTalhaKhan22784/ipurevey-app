@@ -7,11 +7,9 @@ const Table = ({ tbClass, data, onClick }) => {
     <div className="table_container">
       <table className={`db_table ${tbClass}`}>
         <thead>
-          {/* <tr> */}
             {data.head.map((val, i) => (
               <th key={i}>{val}</th>
             ))}
-          {/* </tr> */}
         </thead>
         <tbody>
           {data.body.map((val, i) => (

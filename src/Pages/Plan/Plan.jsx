@@ -6,20 +6,13 @@ import PlanStripe from "./PlanStripe";
 import PlanPaypal from "./PlanPaypal";
 import PlanThank from "./PlanThank";
 import PlanFailed from "./PlanFailed";
-import PlanSelectBank from "./PlanSelectBank";
-import PlanBankPaying from "./PlanBankPaying";
-import PlanAuth from "./PlanAuth";
-import PlanOtp from "./PlanOtp";
-import PlanAccountType from "./PlanAccountType";
-import PlanConfirm from "./PlanConfirm";
-import PlanSuccessfull from "./PlanSuccessfull";
 import PlanList from "../../Components/PlanComponent/PlanList";
 
 const Plan = () => {
   return (
     <React.Fragment>
       <div className="plan_section">
-      <div className="phead_top">
+        <div className="phead_top">
           <div></div>
           <div className="partner_header">
             <h2>Subscribe to a plan</h2>
@@ -85,37 +78,6 @@ const Plan = () => {
                         path="/plan/payment-failed"
                         component={PlanFailed}
                       />
-                      {/* <Route
-                        exact
-                        path="/plan/bank-select"
-                        component={PlanSelectBank}
-                      />
-                      <Route
-                        exact
-                        path="/plan/bank-paying"
-                        component={PlanBankPaying}
-                      />
-                      <Route
-                        exact
-                        path="/plan/bank-auth"
-                        component={PlanAuth}
-                      />
-                      <Route exact path="/plan/bank-otp" component={PlanOtp} />
-                      <Route
-                        exact
-                        path="/plan/bank-type"
-                        component={PlanAccountType}
-                      />
-                      <Route
-                        exact
-                        path="/plan/confirm-payment"
-                        component={PlanConfirm}
-                      />
-                      <Route
-                        exact
-                        path="/plan/success"
-                        component={PlanSuccessfull}
-                      /> */}
                     </Route>
                   </Switch>
                 </div>

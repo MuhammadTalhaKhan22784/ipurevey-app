@@ -1,6 +1,6 @@
 import React from "react";
 import orderFailed from "../../Assets/undraw_access_denied_re_awnf.png";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const PaymentFailed = () => {
   const history = useHistory();

@@ -13,7 +13,7 @@ const Developers = () => {
   return (
     <React.Fragment>
       <div className="developer_container">
-        <divl className="developer_md">
+        <div className="developer_md">
           <SubNav head="Developers" />
           <div className="developer_sd">
             <div className="pm_sections">
@@ -90,7 +90,7 @@ const Developers = () => {
               </div>
             </div>
           </div>
-        </divl>
+        </div>
       </div>
       <Footer />
     </React.Fragment>

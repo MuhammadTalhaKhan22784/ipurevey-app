@@ -29,9 +29,9 @@ const SignUpForm = () => {
                 className="acc_hover_input"
               />
               <div className="hoverI_togle_img">
-                <img class="popover__title" src={hover} alt="..." />
-                <div class="popover__content">
-                  <p class="popover__message">
+                <img className="popover__title" src={hover} alt="..." />
+                <div className="popover__content">
+                  <p className="popover__message">
                     'Default payment method is BACS. In the event BACS payment
                     method can not be requested, we will request for your chosen
                     alternative compensation method'

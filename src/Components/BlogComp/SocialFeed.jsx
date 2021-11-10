@@ -1,5 +1,4 @@
 import React from 'react'
-import Button from '../Btn/Btn'
 // assets 
 import social1 from '../../Assets/Rectangle -1@2x.png'
 import social2 from '../../Assets/Rectangle -5@2x.png'

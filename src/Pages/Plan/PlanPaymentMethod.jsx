@@ -55,8 +55,9 @@ const PlanPaymentMethod = () => {
 
             <div className="row p_methods">
               <div className="col-lg-12">
-                {Object.entries(options).map((el) => (
+                {Object.entries(options).map((el, index) => (
                   <div
+                    key={index}
                     onClick={() => setActive(el[0])}
                     className={
                       el[0] === active ? "paypal_box active_box" : "paypal_box"

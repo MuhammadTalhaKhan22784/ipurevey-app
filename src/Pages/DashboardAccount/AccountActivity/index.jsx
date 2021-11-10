@@ -19,7 +19,7 @@ const AccountActivity = () => {
     if (!showDetail.length) {
       setShowDetail(accountActivityTable.body[0]);
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
     <div className="acc_activity_container">
       <div className="acc_activity_md">
@@ -28,18 +28,18 @@ const AccountActivity = () => {
             <MiniDrawer />
           </div>
           <div className="acc_activity_right_md">
-            <BackHeader head='account activity' link='/dashboard' />
-            <h5 className='acc_activity_head'>ACCOUNT ACTIVITY</h5>
+            <BackHeader head="account activity" link="/dashboard" />
+            <h5 className="acc_activity_head">ACCOUNT ACTIVITY</h5>
             <div className="acc_activity_right_content">
               <div className="acc_active_table_md">
                 <Table
                   data={accountActivityTable}
-                  tbClass="tb_page_table acc_tble"
+                  tbclassName="tb_page_table acc_tble"
                   onClick={selectRow}
                 />
               </div>
               <div className="sDetail_container">
-                <ShowDetail detailData={showDetail} reportBtn  />
+                <ShowDetail detailData={showDetail} reportBtn />
               </div>
             </div>
             <div className="mob_view_activity_card">

@@ -1,12 +1,8 @@
 import React, { useLayoutEffect } from "react";
-// import JoinCommunity from "../../Components/HomeComp/JoinCommunity";
 import "./About.css";
 //assets
 import aboutRec1 from "../../Assets/aboutimg.png";
 import aboutRec2 from "../../Assets/Group 4947@2x.png";
-import getApp from '../../Assets/Group 4930@2x.png'
-import arrow from '../../Assets/Icon feather-arrow-rightw.png'
-import store from '../../Assets/App store Icons@2x.png'
 import GetApp from "../../Components/GetApp";
 import Footer from "../../Layout/Footer";
 import Trusted from "../../Components/HomeComp/Trusted";

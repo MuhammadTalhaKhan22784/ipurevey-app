@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DepartureDateForm from "./DepartureDateForm";
 import { useHistory } from "react-router-dom";
-import TryAgain from "./TryAgain";
 import WhereWereTraveling from "./WhereWereTraveling";
 import MoreDetail from "./MoreDetail";
 import Loading from "./Loading";

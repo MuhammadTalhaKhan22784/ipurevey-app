@@ -2,12 +2,6 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import "./Plan.css";
 import planImg from "../../Assets/Subtraction 2.svg";
-import tick from "../../Assets/Path 5451.svg";
-import PlanPaymentMethod from "./PlanPaymentMethod";
-import PlanStripe from "./PlanStripe";
-import PlanPaypal from "./PlanPaypal";
-import PlanThank from "./PlanThank";
-import PlanFailed from "./PlanFailed";
 import PlanSelectBank from "./PlanSelectBank";
 import PlanBankPaying from "./PlanBankPaying";
 import PlanAuth from "./PlanAuth";
@@ -18,23 +12,7 @@ import PlanSuccessfull from "./PlanSuccessfull";
 import PlanQrCode from "./PlanQrCode";
 
 const PlanPayment = () => {
-  const options = {
-    data1: {
-      text: "Travel disruption monitoring",
-    },
-    data2: {
-      text: "Automatic claim request to travel operator",
-    },
-    data3: {
-      text: "Customer notification of submitted claim",
-    },
-    data4: {
-      text: "History of customer journeys and submitted claim",
-    },
-    data5: {
-      text: "Multiple choice of compensation payment method",
-    },
-  };
+
   return (
     <React.Fragment>
       <div className="plan_section">

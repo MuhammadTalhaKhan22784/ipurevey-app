@@ -33,7 +33,7 @@ const IpurveySpecial = () => {
                 justo duo doloolore mag ipsum dolor sit
               </p>
               <div className="learn_more_lin">
-                <Link className="link">
+                <Link to="#" className="link">
                   learn more <img src={bArrow} alt="..." />
                 </Link>
               </div>
@@ -50,7 +50,7 @@ const IpurveySpecial = () => {
                 justo duo doloolore mag ipsum dolor sit
               </p>
               <div className="learn_more_lin">
-                <Link className="link">
+                <Link to="#" className="link">
                   learn more <img src={bArrow} alt="..." />
                 </Link>
               </div>
@@ -67,7 +67,7 @@ const IpurveySpecial = () => {
                 justo duo doloolore mag ipsum dolor sit
               </p>
               <div className="learn_more_lin">
-                <Link className="link">
+                <Link to="#" className="link">
                   learn more <img src={bArrow} alt="..." />
                 </Link>
               </div>

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 // assets
 import forgotMan from "../../Assets/undraw_my_password_d6kg.png";
 

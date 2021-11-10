@@ -21,8 +21,8 @@ const PlanList = () => {
   };
   return (
     <>
-      {Object.entries(options).map((el) => (
-        <div className="col-lg-12 mb-2 p-0">
+      {Object.entries(options).map((el,index) => (
+        <div key={index} className="col-lg-12 mb-2 p-0">
           <ul className="plan_list">
             <li>
               <img src={tick} alt="..." />

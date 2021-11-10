@@ -1,9 +1,10 @@
-import AppRouter from './Router/Router'
-import './App.css';
+import AppRouter from "./Router/Router";
+import "./App.css";
 
 function App() {
+  console.warn = () => {};
   return (
-    <div >
+    <div>
       <AppRouter />
     </div>
   );

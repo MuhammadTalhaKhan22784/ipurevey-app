@@ -167,8 +167,8 @@ const TermsDetail = () => {
           <div className="termsQues_list">
             <h4>Contents</h4>
             <ul className="tersmQues_ul">
-              {termsData.map((val) => (
-                <li>
+              {termsData.map((val, index) => (
+                <li key={index}>
                   <div
                     className={`termQ
                        ${
@@ -182,34 +182,41 @@ const TermsDetail = () => {
                     onClick={() => handleTransalte(val.id)}
                   >
                     <p>{val.head}</p>
-                    {trans.length? val.id === trans[0].id ? (
-                      <img src={arrow} alt="..." />
-                    ) : null : null}
+                    {trans.length ? (
+                      val.id === trans[0].id ? (
+                        <img src={arrow} alt="..." />
+                      ) : null
+                    ) : null}
                   </div>
-                  {trans.length?  trans[0].id === val.id
-                    ? trans.map((val) => (
-                        <div className="mobileView_termsQues_detail">
-                          <h6>{val.head}</h6>
-                          {val.para.map((para) => (
-                            <>
-                              <p className="mt-3">{para}</p>
-                            </>
-                          ))}
-                        </div>
-                      ))
-                    : null : null }
+                  {trans.length
+                    ? trans[0].id === val.id
+                      ? trans.map((val, index) => (
+                          <div
+                            key={index}
+                            className="mobileView_termsQues_detail"
+                          >
+                            <h6>{val.head}</h6>
+                            {val.para.map((para, index) => (
+                              <div key={index}>
+                                <p className="mt-3">{para}</p>
+                              </div>
+                            ))}
+                          </div>
+                        ))
+                      : null
+                    : null}
                 </li>
               ))}
             </ul>
           </div>
           <div className="terms_quesDetail_box">
-            {trans.map((val) => (
-              <div className="termQues_detail_content">
+            {trans.map((val, index) => (
+              <div key={index} className="termQues_detail_content">
                 <h6>{val.head}</h6>
-                {val.para.map((para) => (
-                  <>
+                {val.para.map((para, index) => (
+                  <div key={index}>
                     <p className="mt-3">{para}</p>
-                  </>
+                  </div>
                 ))}
               </div>
             ))}
