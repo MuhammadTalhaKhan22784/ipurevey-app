@@ -4,13 +4,11 @@ import logo from "../Assets/Group 4947.png";
 import bar from "../Assets/Group 4111.png";
 import "./style.css";
 import NotificationDropdown from "../Components/DropDown/NotificationDropDown";
-// import MiniDrawer from '../Pages/DashboardAccount/Sidebar'
 import MobViewDashboardSidebar from "./MobViewDashboardSidebar";
 import UserDropdown from "../Components/DropDown/UserDropDown";
 // assets 
 import path from '../Assets/Path 5114.png'
 import MobileViewMenu from "./MobileViewMenu";
-// import sOpen from "../Assets/Group 3398.png";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -53,7 +51,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/terms">
+                <Link className="nav-link" to="/service">
                   Services
                 </Link>
               </li>

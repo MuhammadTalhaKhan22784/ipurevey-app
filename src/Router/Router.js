@@ -21,6 +21,7 @@ import Payment from "../Pages/Payment/Payment";
 import Plan from "../Pages/Plan/Plan";
 import ApiDoc from "../Pages/ApiDoc/ApiDoc";
 import OurPlans from "../Pages/OurPlans/OurPlans";
+import Service from "../Pages/Service/Service";
 import PlanPayment from "../Pages/Plan/PlanPayment";
 import FeedBack from "../Components/Feedback/FeedBack";
 import Developers from "../Pages/Developers";
@@ -61,6 +62,7 @@ const AppRouter = () => {
         <Route path="/reset" component={ResetPassword} />
         <Route path="/faq" component={Faq} />
         <Route path="/career" component={Career} />
+        <Route path="/service" component={Service} />
         <Route path="/partners" component={Partners} />
         <Route path="/payment" component={Payment} />
         <Route path="/plan" component={Plan} />
@@ -85,8 +87,8 @@ const AppRouter = () => {
         <Route path="/start-subsricption" component={StartSubscription} />
         <Route path="/select-method" component={SelectMethod} />
         <Route path="/method-detail" component={MethodDetail} />
-        <Route path='/subs-failed'  component={Success}/>
-        <Route path='/subs-succes' component={Failed} />
+        <Route path="/subs-failed" component={Success} />
+        <Route path="/subs-succes" component={Failed} />
       </Switch>
       {/* <Footer /> */}
       {/* <CopyRight /> */}
