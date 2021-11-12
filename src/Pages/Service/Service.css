@@ -70,6 +70,7 @@
   padding: 12px 25px;
   margin-right: 10px;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 992px) {
